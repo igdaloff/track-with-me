@@ -25,7 +25,7 @@ passport.use(new FacebookStrategy({
   function(accessToken, refreshToken, profile, done) {
 
     console.log("in callback.  profile.id: " + profile.id + ", displayName: " + profile.displayName);
-    var pictureUlr = 'https://graph.facebook.com/' + profile.username + '/picture'
+    var pictureUlr = 'https://graph.facebook.com/' + profile.username + '/picture?type=large'
 
     // TODO - this should be refactored into User.js as User.findOrCreate()
     User.findOne( { facebookId : profile.id }, function (err, user) {
