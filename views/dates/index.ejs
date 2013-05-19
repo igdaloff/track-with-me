@@ -1,25 +1,18 @@
-<!DOCTYPE html/>
-<html>
-	<head>
-		<title><%= title %></title>
-		<link rel='stylesheet' href='/stylesheets/style.css' />
-	</head>
-	<body>
-		<h1>Dates</h1>
-		<p>Here are all the dates.</p>
-		<div id="dates">
-			<% dates.forEach(function(date) { %>
-				<div class="date">
-					<h2><%= date.name %></h2>
-					<p>With: <%= date.friend %></p>
-					<p>On: <%= date.date %></p>
-					<ul>
-						<li><%= date.song1 %></li>
-						<li><%= date.song2 %></li>
-						<li><%= date.song3 %></li>
-					</ul>
-				</div>
-			<% 	}) %>
-		</div>
-	</body>
-</html>
+<% layout('/boilerplate') -%>
+<% stylesheet('/stylesheets/style.css') -%>
+<h1>Dates</h1>
+<p>Here are all the dates.</p>
+<div id="dates">
+	<% dates.forEach(function(date) { %>
+	<div class="date">
+		<h2><%= date.name %></h2>
+		<p>With: <%= date.friend %></p>
+		<p>On: <%= date.date %></p>
+		<ul>
+			<li><%= date.song1 %></li>
+			<li><%= date.song2 %></li>
+			<li><%= date.song3 %></li>
+		</ul>
+	</div>
+	<% 	}) %>
+</div>

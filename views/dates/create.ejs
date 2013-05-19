@@ -1,22 +1,16 @@
-<!DOCTYPE html/>
-<html>
-	<head>
-		<title><%= title %></title>
-		<link rel='stylesheet' href='/stylesheets/style.css' />
-	</head>
-	<body>
-		<h1><%= title %></h1>
-		<p>Build your date!</p>
-		<form method='post' enctype='multipart/form-data'>
-			<p><input type='text', name='date[name]', placeholder='Name'></p>
-			<p><input type='text', name='date[friend]', placeholder='Friend'></p>
-			<p><input type='text', name='date[date]', placeholder='Date'></p>
-			<p><input type='text', name='date[song1]', placeholder='Song 1'></p>
-			<p><input type='text', name='date[song2]', placeholder='Song 2'></p>
-			<p><input type='text', name='date[song3]', placeholder='Song 3'></p>
-			
-			<p><input type='submit', value='Track With Me' /></p>
-		</form>
-	</body>
-</html>
-			
+<% layout('/boilerplate') -%>
+<% stylesheet('/stylesheets/style.css') -%>
+<h1><%= title %></h1>
+<p>Build your date!</p>
+<form method='post' enctype='multipart/form-data'>
+	<p><input type='text', name='date[name]', placeholder='Name'></p>
+	<p><input type='text', name='date[friend]', placeholder='Friend'></p>
+	<p><input type='text', name='date[date]', placeholder='Date'></p>
+	<p><input type='text', name='date[song1]', placeholder='Song 1'></p>
+	<p><input type='text', name='date[song2]', placeholder='Song 2'></p>
+	<p><input type='text', name='date[song3]', placeholder='Song 3'></p>
+
+	<p><input type='submit', value='Track With Me' /></p>
+</form>
+
+

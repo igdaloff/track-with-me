@@ -4,6 +4,7 @@
  */
 var express = require('express')
   , routes = require('./routes')
+  , engine = require('ejs-locals')
   , dates = require('./routes/dates')
   , http = require('http')
   , path = require('path')
@@ -13,8 +14,10 @@ var express = require('express')
 var app = express();
 
 // all environments
+
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
+app.engine('ejs', engine);
 app.set('view engine', 'ejs');
 app.use(express.favicon());
 app.use(express.logger('dev'));

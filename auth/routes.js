@@ -4,13 +4,11 @@ var FacebookStrategy = require('passport-facebook').Strategy;
 
 // Serialization for passport - all based on the user.id, not the facebookId
 passport.serializeUser(function(user, done) {
-  console.log("serializaing user: " + user);
   done(null, user.id);
 });
 
 passport.deserializeUser(function(id, done) {
   User.findOne( { '_id': id }, function (err, user) {
-    console.log("deserialized user: " + user);
     done(err, user);
   });
 });
@@ -36,8 +34,6 @@ passport.use(new FacebookStrategy({
 
 
       if (user) {
-
-        console.log("profile picture: " + profile.picture);
         
         // update the user with latest data from facebook
         User.update(
@@ -51,13 +47,11 @@ passport.use(new FacebookStrategy({
             }
         );
 
-        console.log("logged in as " + user.displayName);
         return done(err, user);
       } 
 
 
       User.create({ facebookId: profile.id, displayName : profile.displayName, picture : pictureUlr }, function (err, user){
-        console.log("logged in as " + user.displayName);
         return done(err, user);
       });
     });
