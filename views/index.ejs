@@ -1,10 +1,16 @@
 <% layout('/boilerplate') -%>
 <% stylesheet('/stylesheets/style.css') -%>
 <h1><%= title %></h1>
+
+<% if (isAuthenticated == true) { %>
+	<p>Welcome, <%= displayName %></p>	
+<% } %>
+
 <ul>
 	<% if (isAuthenticated == false) { %>
-	<li><a href="/auth/facebook">Login with Facebook</a></li>	
+		<li><a href="/auth/facebook">Login with Facebook</a></li>	
 	<% } else { %>
+	
 	<li><a href='/create'>Create a Date</a></li>
 	<li><a href='/dates'>View Dates</a></li>
 	<li><a href='/logout'>Logout</a></li>
