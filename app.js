@@ -6,7 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
   , dates = require('./routes/dates')
-  , user = require('./routes/user')
+  , login = require('./routes/login')
   , http = require('http')
   , path = require('path');
 
@@ -28,8 +28,11 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', dates.list);
-app.get('/users', user.list);
+app.get('/', routes.index);
+app.get('/login', login.login);
+app.get('/dates', dates.list);
+app.get('/create', dates.form);
+app.post('/create', dates.submit(app.get('dates')));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

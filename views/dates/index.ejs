@@ -10,8 +10,9 @@
 		<div id="dates">
 			<% dates.forEach(function(date) { %>
 				<div class="date">
-					<h2><%= date.title %></h2>
-					<h3>With: <%= date.friend %></h3>
+					<h2><%= date.name %></h2>
+					<p>With: <%= date.friend %></p>
+					<p>On: <%= date.date %></p>
 					<ul>
 						<li><%= date.song1 %></li>
 						<li><%= date.song2 %></li>
