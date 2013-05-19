@@ -1,22 +1,7 @@
-var dates = []
 var Date = require('../models/Date');
 var path = require('path');
 var fs = require('fs');
 var join = path.join;
-
-dates.push( {
-	title: 'An Evening In Missoula',
-	friend: 'Erica Ermann',
-	song1: 'Daft Punk - Human After All',
-	song2: 'Dale Earnhardt Jr. Jr. - Nothing But Our Love',
-	song3: 'Moby - God Moving Over The Face Of The Water'
-});
-
-dates.push( {
-	title: 'Let\'s Listen to Music!',
-	friend: 'Erica Ermann',
-	song1: 'Radiohead - Lotus Flower'
-});
 
 exports.list = function(req, res){
 	Date.find({}, function(err, dates){
