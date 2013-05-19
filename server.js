@@ -13,7 +13,7 @@ function start(route) {
     response.end();
   }
 
-  http.createServer(onRequest).listen(8888);
+  http.createServer(onRequest).listen(3000);
   console.log("Server has started.");
 }
 
