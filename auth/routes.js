@@ -2,17 +2,23 @@ var passport = require('passport');
 var User = require('../models/User');
 var FacebookStrategy = require('passport-facebook').Strategy;
 
-// Serialization for passport
+// Serialization for passport - all based on the user.id, not the facebookId
 passport.serializeUser(function(user, done) {
+  console.log("serializaing user: " + user);
   done(null, user.id);
 });
 
 passport.deserializeUser(function(id, done) {
-  User.findOne( { 'id': id }, function (err, user) {
+  User.findOne( { '_id': id }, function (err, user) {
+    console.log("deserialized user: " + user);
     done(err, user);
   });
 });
 
+/* The clientID and clientSecret will change depending on environment.
+   These are the DEV credentials.
+
+   TODO - figure out the best way to accoplish this in Node/Express */
 passport.use(new FacebookStrategy({
     clientID: '197017313781062',
     clientSecret: 'e216a7201d3e0d2e36d6d5ae18f75bdf',
@@ -22,21 +28,16 @@ passport.use(new FacebookStrategy({
   
   function(accessToken, refreshToken, profile, done) {
 
-    console.log("in callback.  profile.id: " + profile.id + ", displayName: " + profile.displayName);
     var pictureUlr = 'https://graph.facebook.com/' + profile.username + '/picture?type=large'
 
     // TODO - this should be refactored into User.js as User.findOrCreate()
     User.findOne( { facebookId : profile.id }, function (err, user) {
-      console.log("in User.findOne callback");
       if (err) return next(err);
 
 
       if (user) {
-        console.log("user: " + user);
 
-        console.log("updating display name to: " + profile.displayName);
-        console.log("updating imgUrl to: " + profile.picture);
-        console.log("username: " + profile.username);
+        console.log("profile picture: " + profile.picture);
         
         // update the user with latest data from facebook
         User.update(
@@ -46,7 +47,7 @@ passport.use(new FacebookStrategy({
                 picture : pictureUlr }
             }
           , function(error, result) {
-              console.log('result: ' + result);
+              if (error) console.log("Error updating user info: " + error);
             }
         );
 
@@ -62,7 +63,3 @@ passport.use(new FacebookStrategy({
     });
   }
 ));
-
-exports.facebook = passport.authenticate('facebook');
-exports.facebookCallback = passport.authenticate('facebook', { successRedirect: '/',
-                                      failureRedirect: '/login' });

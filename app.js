@@ -5,7 +5,6 @@
 var express = require('express')
   , routes = require('./routes')
   , dates = require('./routes/dates')
-  , login = require('./routes/login')
   , http = require('http')
   , path = require('path')
   , auth = require('./auth/routes')
@@ -33,14 +32,40 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/auth/facebook', auth.facebook);
-app.get('/auth/facebook/callback', auth.facebookCallback);
+// Only supporting Facebook for now
+// Redirect the user to Facebook for authentication.  When complete,
+// Facebook will redirect the user back to the application at
+//     /auth/facebook/callback
+app.get('/auth/facebook', passport.authenticate('facebook'));
+
+// Facebook will redirect the user to this URL after approval.  Finish the
+// authentication process by attempting to obtain an access token.  If
+// access was granted, the user will be logged in.  Otherwise,
+// authentication has failed.
+app.get('/auth/facebook/callback', 
+  passport.authenticate('facebook', { successRedirect: '/',
+                                      failureRedirect: '/login' }));
+
+app.get('/logout', function(req, res){
+  req.logout();
+  res.redirect('/');
+});
+
 app.get('/', routes.index);
-app.get('/login', login.login);
-app.get('/dates', dates.list);
-app.get('/create', dates.form);
+app.get('/dates', ensureAuthenticated, dates.list);
+app.get('/create', ensureAuthenticated, dates.form);
 app.post('/create', dates.submit(app.get('dates')));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+// Simple route middleware to ensure user is authenticated.
+//   Use this route middleware on any resource that needs to be protected.  If
+//   the request is authenticated (typically via a persistent login session),
+//   the request will proceed.  Otherwise, the user will be redirected to the
+//   login page.
+function ensureAuthenticated(req, res, next) {
+  if (req.isAuthenticated()) { return next(); }
+  res.redirect('/')
+}

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title><%= title %></title>
-		<link rel='stylesheet' href='/stylesheets/style.css' />
-	</head>
-	<body>
-		<h1><%= title %></h1>
-		<ul>
-			<li><a href='/login'>Login</a></li>
-			<li><a href='/dates'>View Dates</a></li>
+<head>
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<h1><%= title %></h1>
+	<ul>
+		<% if (isAuthenticated == false) { %>
+			<li><a href="/auth/facebook">Login with Facebook</a></li>	
+		<% } else { %>
 			<li><a href='/create'>Create a Date</a></li>
-		</ul>
-	</body>
+			<li><a href='/dates'>View Dates</a></li>
+			<li><a href='/logout'>Logout</a></li>
+		<% } %>
+	</ul>
+</body>
 </html>
