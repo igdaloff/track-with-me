@@ -1,0 +1,11 @@
+<% layout('/boilerplate') -%>
+<% stylesheet('/stylesheets/style.css') -%>
+<% script('/javascripts/spotify-play.js') -%>
+<h1><%= title %></h1>
+<ul id='results-list'> <!-- track['artist']['name'] + ' - ' +  -->
+	<% songData.forEach(function(track) { %>
+		<li><p id='<%= track.href %>'><%= track.artists[0].name + ' - ' + track.name %></p></li>
+	<% 	}) %>
+</ul>
+
+<div id='play-div' />

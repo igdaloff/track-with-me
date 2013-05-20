@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -11,9 +10,10 @@ var express = require('express')
   , auth = require('./auth/routes')
   , passport = require('passport')
 
-var app = express();
+// throwaway
+var spotify = require('./routes/spotify');
 
-// all environments
+var app = express();
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
@@ -57,7 +57,12 @@ app.get('/logout', function(req, res){
 app.get('/', routes.index);
 app.get('/dates', ensureAuthenticated, dates.list);
 app.get('/create', ensureAuthenticated, dates.form);
-app.post('/create', dates.submit(app.get('dates')));
+app.post('/create', dates.submit);
+
+app.get('/searchSpotify', spotify.search);
+app.post('/searchSpotify', spotify.submit);
+
+app.get('/spotifyResults', spotify.results);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

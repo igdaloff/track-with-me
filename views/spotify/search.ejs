@@ -1,0 +1,11 @@
+<% layout('/boilerplate') -%>
+<% stylesheet('/stylesheets/style.css') -%>
+<h1><%= title %></h1>
+<p>Enter your search term</p>
+<form method='post' enctype='multipart/form-data'>
+	<p><input type='text', name='spotify[keyword]', placeholder='Search Term'></p>
+
+	<p><input type='submit', value='Search' /></p>
+</form>
+
+
