@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
 	$("#searching").hide();
 
-	$("#results-list").on("click", ">li", function(){
+	$(document.body).on("click", "ul#results-list li", function(){
 
 		console.log("click")
 		var spotifyUri = $(this).attr('id');
@@ -48,10 +48,6 @@ $(document).ready(function(){
 			$('#spotify-search-results').append(htmlString + '</ul>');
 		});
 	});
-
-	
-
-
 });
 
 $(document).ajaxStart(function() {
