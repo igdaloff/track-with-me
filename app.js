@@ -60,10 +60,9 @@ app.get('/dates', ensureAuthenticated, dates.list);
 app.get('/create', ensureAuthenticated, dates.form);
 app.post('/create', dates.submit);
 
+// Used for ajax call to spotify search
 app.get('/searchSpotify', spotify.search);
-app.post('/searchSpotify', spotify.submit);
-
-app.get('/spotifyResults', spotify.results);
+app.get('/spotifySearch', spotify.ajaxSearch);
 
 app.get('/ajaxTest', ajaxTest.callAjax);
 

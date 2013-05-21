@@ -3,14 +3,14 @@
 <% script('/javascripts/spotify-search.js') -%>
 <h1><%= title %></h1>
 <p>Enter your search term</p>
-<form method='post' enctype='multipart/form-data'>
-	<p><input type='text', name='spotify[keyword]', placeholder='Search Term'></p>
+<input id='spotify-search-term' type='text' placeholder='Search Term'>
 
-	<p><input type='submit', value='Search' /></p>
-</form>
+<button id='spotify-search-button'>Search</button>
 
-<button id='ajax-button'>Click Me!</button>
+<p id="searching">Searching...</p>
 
-<div id='ajax-div' />
+<div id='spotify-search-results' />
+
+<div id='play-div' />
 
 
