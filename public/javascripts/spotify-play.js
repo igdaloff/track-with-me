@@ -15,4 +15,6 @@ $(document).ready(function(){
 	});
 });
 
+
+
 console.log("loaded spotify-play.js");

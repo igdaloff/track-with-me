@@ -9,6 +9,7 @@ var express = require('express')
   , path = require('path')
   , auth = require('./auth/routes')
   , passport = require('passport')
+  , ajaxTest = require('./routes/ajaxTest')
 
 // throwaway
 var spotify = require('./routes/spotify');
@@ -63,6 +64,8 @@ app.get('/searchSpotify', spotify.search);
 app.post('/searchSpotify', spotify.submit);
 
 app.get('/spotifyResults', spotify.results);
+
+app.get('/ajaxTest', ajaxTest.callAjax);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
