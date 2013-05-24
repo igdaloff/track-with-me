@@ -1,3 +1,19 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_mixins\.scss}line{font-family:\0000322}}
+.clearfix {
+  zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_mixins\.scss}line{font-family:\0000324}}
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_mixins\.scss}line{font-family:\0000330}}
+.clearfix:after {
+  clear: both;
+}
+
 @font-face {
   font-family: 'mission_scriptregular';
   src: url("../../fonts/mission-script/mission-script-webfont.eot");
@@ -14,7 +30,119 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'LatoHairline';
+  src: url("../../fonts/lato/Lato-Hai-webfont.eot");
+  src: url("../../fonts/lato/Lato-Hai-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-Hai-webfont.woff") format("woff"), url("../../fonts/lato/Lato-Hai-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-Hai-webfont.svg#LatoHairline") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoHairlineItalic';
+  src: url("../../fonts/lato/Lato-HaiIta-webfont.eot");
+  src: url("../../fonts/lato/Lato-HaiIta-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-HaiIta-webfont.woff") format("woff"), url("../../fonts/lato/Lato-HaiIta-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-HaiIta-webfont.svg#LatoHairlineItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoLight';
+  src: url("../../fonts/lato/Lato-Lig-webfont.eot");
+  src: url("../../fonts/lato/Lato-Lig-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-Lig-webfont.woff") format("woff"), url("../../fonts/lato/Lato-Lig-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-Lig-webfont.svg#LatoLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoLightItalic';
+  src: url("../../fonts/lato/Lato-LigIta-webfont.eot");
+  src: url("../../fonts/lato/Lato-LigIta-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-LigIta-webfont.woff") format("woff"), url("../../fonts/lato/Lato-LigIta-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-LigIta-webfont.svg#LatoLightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoRegular';
+  src: url("../../fonts/lato/Lato-Reg-webfont.eot");
+  src: url("../../fonts/lato/Lato-Reg-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-Reg-webfont.woff") format("woff"), url("../../fonts/lato/Lato-Reg-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-Reg-webfont.svg#LatoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoItalic';
+  src: url("../../fonts/lato/Lato-RegIta-webfont.eot");
+  src: url("../../fonts/lato/Lato-RegIta-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-RegIta-webfont.woff") format("woff"), url("../../fonts/lato/Lato-RegIta-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-RegIta-webfont.svg#LatoItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  src: url("../../fonts/lato/Lato-Bol-webfont.eot");
+  src: url("../../fonts/lato/Lato-Bol-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-Bol-webfont.woff") format("woff"), url("../../fonts/lato/Lato-Bol-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-Bol-webfont.svg#LatoBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBoldItalic';
+  src: url("../../fonts/lato/Lato-BolIta-webfont.eot");
+  src: url("../../fonts/lato/Lato-BolIta-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-BolIta-webfont.woff") format("woff"), url("../../fonts/lato/Lato-BolIta-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-BolIta-webfont.svg#LatoBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBlack';
+  src: url("../../fonts/lato/Lato-Bla-webfont.eot");
+  src: url("../../fonts/lato/Lato-Bla-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-Bla-webfont.woff") format("woff"), url("../../fonts/lato/Lato-Bla-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-Bla-webfont.svg#LatoBlack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBlackItalic';
+  src: url("../../fonts/lato/Lato-BlaIta-webfont.eot");
+  src: url("../../fonts/lato/Lato-BlaIta-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato/Lato-BlaIta-webfont.woff") format("woff"), url("../../fonts/lato/Lato-BlaIta-webfont.ttf") format("truetype"), url("../../fonts/lato/Lato-BlaIta-webfont.svg#LatoBlackItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media screen {
+  /* Layout */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\000032}}
+  .wrapper {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  /* Colors */
+  /*Typography*/
+  /*Icons*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000318}}
+  [data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000329}}
+  .screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /*Global Media Queries*/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000313}}
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,69 +176,39 @@
   body {
     line-height: 1;
     font-size: 62.5%;
+    /*1em = 10px*/
+    font-family: "LatoRegular", helvetica, sans;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000332}}
   ol, ul {
     list-style: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000335}}
   blockquote, q {
     quotes: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000339}}
   blockquote:before, blockquote:after,
   q:before, q:after {
     content: '';
     content: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000343}}
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000348}}
   a {
     text-decoration: none;
     color: inherit;
   }
 
-  /* Layout */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\000032}}
-  .wrapper {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-
-  /* Colors */
-  /*Typography*/
-  /*Icons*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000317}}
-  [data-icon]:before {
-    font-family: 'icomoon';
-    content: attr(data-icon);
-    speak: none;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000328}}
-  .screen-reader-text {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  /*Global Media Queries*/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\000031}}
   header {
     padding: 1.5em 0 1em;
@@ -147,21 +245,21 @@
 }
 @media screen and (min-width: 21em) {
   /*336px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000337}}
   body {
     font-size: 75%;
   }
 }
 @media screen and (min-width: 37.5em) {
   /*600px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000343}}
   body {
     font-size: 87.5%;
   }
 }
 @media screen and (min-width: 60em) {
   /*960px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000349}}
   body {
     font-size: 100%;
   }

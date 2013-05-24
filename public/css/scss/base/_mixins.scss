@@ -18,6 +18,20 @@ $legacy-support-for-ie8: true;
 	}
 }
 
+//Clearfix
+.clearfix {
+  zoom:1;
+  &:before, &:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden;
+  }
+  &:after {
+      clear: both;
+  }
+}
+
 // Disable user selection on elements;
 @mixin no-user-select {
 	-moz-user-select: none;
@@ -43,9 +57,9 @@ $legacy-support-for-ie8: true;
   box-shadow: $top $left $blur $color #{$inset};
 }
 
-
 // Global Transitions
 @mixin transition {
 	@include transition(0.2s all);
 }
+
 
