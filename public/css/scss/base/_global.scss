@@ -1,0 +1,51 @@
+/* Layout */
+.wrapper{
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/* Colors */
+$red		:		#d13d27;
+
+/*Typography*/
+
+
+
+/*Icons*/
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.screen-reader-text{
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+/*Global Media Queries*/
+@media (min-width : 21em) { /*336px*/
+	body{
+		font-size: 75%;
+	}
+}
+
+@media (min-width : 37.5em) { /*600px*/
+	body{
+		font-size: 87.5%;
+	}
+}
+
+@media (min-width : 60em) { /*960px*/
+	body{
+		font-size: 100%;
+	}
+}

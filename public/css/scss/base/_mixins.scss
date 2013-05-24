@@ -1,0 +1,51 @@
+//
+// utilities: mixins.scss
+//
+//
+
+// Settings
+$experimental-support-for-svg: true;
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie8: true;
+
+@mixin background-with-css2-fallback($background-1, $background-2: false, $background-3: false, $background-4: false) {
+	$backgrounds: compact($background-1, $background-2, $background-3, $background-4);
+	$mult-bgs: -compass-list-size($backgrounds) > 1;
+	$simple-background: if($mult-bgs or prefixed(-css2, $backgrounds), -css2(-compass-nth($backgrounds, first)), false);
+	@include background($background-1, $background-2, $background-3, $background-4);
+	@if not blank($simple-background) {
+		background: $simple-background;
+	}
+}
+
+// Disable user selection on elements;
+@mixin no-user-select {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+@mixin clearfix {
+	&:before,
+	&:after {
+ 	   content: " ";
+    	display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+// Box Shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow: $top $left $blur $color #{$inset};
+  box-shadow: $top $left $blur $color #{$inset};
+}
+
+
+// Global Transitions
+@mixin transition {
+	@include transition(0.2s all);
+}
+

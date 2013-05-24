@@ -1,0 +1,29 @@
+header{
+	padding: 1.5em 0 1em;
+	@include box-shadow(2px, 0, 9px, rgba(0,0,0,0.3))
+}
+
+.logo{
+	display: inline-block;
+
+	a{
+		font-family: 'mission_scriptregular', script, serif;
+		font-size: 4em;
+		color: $red;
+	}
+}
+
+nav{
+	float: right;
+
+	li{
+		display: inline-block;
+		margin-left: 2em;
+		line-height: 2;
+	}
+
+	i{
+		font-size: 2em;
+		color: $red;
+	}
+}
