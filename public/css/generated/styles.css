@@ -211,33 +211,35 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\000031}}
   header {
+    display: inline-block;
+    width: 100%;
     padding: 1.5em 0 1em;
     -webkit-box-shadow: 2px 0 9px rgba(0, 0, 0, 0.3) ;
     box-shadow: 2px 0 9px rgba(0, 0, 0, 0.3) ;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\000038}}
   .logo {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000311}}
   .logo a {
     font-family: 'mission_scriptregular', script, serif;
     font-size: 4em;
     color: #d13d27;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000318}}
   nav {
     float: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000321}}
   nav li {
     display: inline-block;
     margin-left: 2em;
     line-height: 2;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000327}}
   nav i {
     font-size: 2em;
     color: #d13d27;
