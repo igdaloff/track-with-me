@@ -29,7 +29,6 @@ app.use(express.methodOverride());
 app.use(express.cookieSession({ secret: 'S0nJ0l0ve!', maxAge: 360*5 }));
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(facebook.Facebook.middleware({ appId: '197017313781062', secret: 'e216a7201d3e0d2e36d6d5ae18f75bdf' }));
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -67,8 +66,6 @@ app.get('/searchFacebook', facebook.search);
 
 // for ajax searching
 app.get('/spotifySearch', spotify.ajaxSearchTracks);
-app.get('/facebookSearch', /* facebook.loginRequired */ ensureAuthenticated, facebook.ajaxSearchFriends);
-
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
