@@ -266,7 +266,7 @@
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000334}}
   nav i:hover {
-    color: #e42f14;
+    color: #da4d38;
   }
 
   /*LOGIN*/
@@ -286,7 +286,7 @@
     background: white;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000354}}
-  #login a {
+  #login .login-button {
     position: relative;
     background: #4450a4;
     text-indent: 2em;
@@ -298,11 +298,11 @@
     -webkit-backface-visibility: hidden;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000361}}
-  #login a:hover {
+  #login .login-button:hover {
     background: #4d5ab5;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000365}}
-  #login a:before {
+  #login .login-button:before {
     content: 'f';
     font-family: 'icomoon';
     position: absolute;
@@ -318,6 +318,11 @@
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000382}}
+  .logout {
+    text-decoration: underline;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000386}}
   .login-hidden {
     top: -5px;
   }

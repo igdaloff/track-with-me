@@ -10,7 +10,14 @@
   </head>
   <body>
     <div id="login" class="login-hidden">
-			<a class="button" href="/auth/facebook">Connect with Facebook</a>
+
+		<% if (isAuthenticated == false) { %>
+			<a class="button login-button" href="/auth/facebook">Login with Facebook</a>
+		<% } else { %>
+
+			<a class="logout" href="/logout">Disconnect from Facebook</a>
+	 <% } %>
+
     </div>
     <header>
     	<div class="wrapper">

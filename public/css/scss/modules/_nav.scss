@@ -32,7 +32,7 @@ nav{
 		@include transition;
 
 		&:hover{
-			color: saturate($red, 15%);
+			color: lighten($red, 5%);
 		}
 	}
 }
@@ -51,7 +51,7 @@ nav{
 	@include box-shadow(0, 2px, 10px, rgba(0,0,0,0.15));
 	background: $white;
 
-	a{
+	.login-button{
 		position: relative;
 		background: #4450a4;
 		text-indent: 2em;
@@ -77,6 +77,10 @@ nav{
 			-webkit-backface-visibility: hidden;
 		}
 	}
+}
+
+.logout{
+	text-decoration: underline;
 }
 
 .login-hidden{
