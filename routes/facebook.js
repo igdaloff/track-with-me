@@ -7,8 +7,6 @@ exports.search = function(req, res, next){
 		
 		var friendsJson = JSON.parse(data);
 
-		console.log("friends: " + friendsJson.data);
-
 		var friendsArray = friendsJson.data
 
 		// sort friends data
