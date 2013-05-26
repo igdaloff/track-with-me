@@ -13,7 +13,12 @@ $light-grey	: 	#f3f3f3;
 $grey				:		#838384;
 
 /*Typography*/
-$sans-serif: 'LatoRegular', helvetica, sans;
+$sans-serif: 'LatoLight', helvetica, sans-serif;
+
+h2{
+	font-size: 1.8em;
+	margin-bottom: 0.25em;
+}
 
 /*Form Elements*/
 .button{

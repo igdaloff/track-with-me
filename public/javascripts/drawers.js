@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var headerHeight = $('header').outerHeight();
 		var drawer = $(this).attr('href');
 		var drawerOther = $(this).parents('li').siblings('li').children('.nav-link').attr('href');
-		var drawerHeightNegative = ($(drawer).outerHeight())*-1.1;
+		var drawerHeightNegative = ($(drawer).outerHeight())*-2;
 
 		if ( $(drawer).hasClass('drawer-hidden') ){
 			$(drawer).css('top', headerHeight);
