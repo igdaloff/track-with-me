@@ -5,8 +5,13 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <%-scripts%>
     <%-stylesheets%>
+		<% script('/javascripts/navigation.js') -%>
+
   </head>
   <body>
+    <div id="login" class="login-hidden">
+			<a class="button" href="/auth/facebook">Connect with Facebook</a>
+    </div>
     <header>
     	<div class="wrapper">
 	      <h1 class="logo">
@@ -15,13 +20,13 @@
 	      <nav>
 	      	<ul>
 	      		<li>
-	      			<a href="">
+	      			<a class="nav-about-link" href="">
 	      				<i aria-hidden="true" data-icon="?"></i>
 	      				<span class="screen-reader-text">What is Track With Me?</span>
 	      			</a>
 	      		</li>
 	      		<li>
-	      			<a href="">
+	      			<a class="nav-login-link" href="">
 	      				<i aria-hidden="true" data-icon="l"></i>
 	      				<span class="screen-reader-text">Login</span>
 	      			</a>
