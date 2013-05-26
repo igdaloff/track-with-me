@@ -19,8 +19,6 @@ exports.search = function(req, res, next){
 			return 0;
 		});
 
-
-
 		res.render('facebook/search', {
 			title: 'Search Facebook',
 			friends: friendsArray,
