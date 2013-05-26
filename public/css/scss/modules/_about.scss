@@ -1,0 +1,12 @@
+#about{
+	position:absolute;
+	left: 0;
+	width: 100%;
+	padding: 2em 0;
+	border-bottom: 1px solid $grey;
+
+	p{
+		line-height: 1.4;
+		font-size: 1.2em;
+	}
+}

@@ -7,12 +7,25 @@
 }
 
 /* Colors */
-$red		:		#d13d27;
+$red				:		#d13d27;
+$white			:		#fff;
+$light-grey	: 	#f3f3f3;
+$grey				:		#838384;
 
 /*Typography*/
 $sans-serif: 'LatoRegular', helvetica, sans;
 
-
+/*Form Elements*/
+.button{
+	display: inline-block;
+	height: 2.6em;
+	line-height: 2.6;
+	padding: 0 1em;
+	border-radius: 4px;
+	color: $white;
+	font-family: 'LatoBold', helvetica, sans-serif;
+	font-size: 0.9em;
+}
 
 /*Icons*/
 [data-icon]:before {

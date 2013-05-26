@@ -5,8 +5,27 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <%-scripts%>
     <%-stylesheets%>
+		<% script('/javascripts/drawers.js') -%>
+
   </head>
   <body>
+
+    <div id="about" class="drawer-hidden drawer">
+			<div class="wrapper">
+				<p>Track with Me is a new way to listen to music with others. Send a three-song mix to a friend, set a time to start the mix and enjoy the tunes together in real-time. Once the mix is over, it's gone forever. Enjoy it while it lasts!</p>
+			</div>
+    </div>
+
+    <div id="login" class="drawer-hidden drawer">
+
+			<% if (isAuthenticated == false) { %>
+				<a class="button login-button" href="/auth/facebook">Login with Facebook</a>
+			<% } else { %>
+				<a class="logout" href="/logout">Disconnect from Facebook</a>
+		  <% } %>
+
+    </div>
+
     <header>
     	<div class="wrapper">
 	      <h1 class="logo">
@@ -15,13 +34,13 @@
 	      <nav>
 	      	<ul>
 	      		<li>
-	      			<a href="">
+	      			<a class="nav-about-link nav-link" href="#about">
 	      				<i aria-hidden="true" data-icon="?"></i>
 	      				<span class="screen-reader-text">What is Track With Me?</span>
 	      			</a>
 	      		</li>
 	      		<li>
-	      			<a href="">
+	      			<a class="nav-login-link nav-link" href="#login">
 	      				<i aria-hidden="true" data-icon="l"></i>
 	      				<span class="screen-reader-text">Login</span>
 	      			</a>
@@ -35,7 +54,15 @@
       <%-body -%>
     </section>
     <footer>
-      <!-- TODO implement footer -->
+    	<div class="wrapper">
+	      <p>© 2013 Track With Me Ltd</p>
+	      <ul>
+	      	<li><a href="//twitter.com/trackwithme" target="_blank">@trackwithme</a></li>
+	      	<li><a href="mailto:nathan@trackwithme.com">Contact</a></li>
+	      	<li><a href="/terms">Terms</a></li>
+	      	<li><a href="/privacy" >Privacy</a></li>
+	      </ul>
+    	</div>
     </footer>
   </body>
 </html>

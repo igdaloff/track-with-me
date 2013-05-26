@@ -1,0 +1,47 @@
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 2em 0;
+	font-size: 0.9em;
+	color: $grey;
+	text-align: center;
+	background: $light-grey;
+
+	ul{
+		margin-top: 1em;
+	}
+
+	li{
+		display: inline-block;
+		margin: 0 0.5em;
+	}
+
+	a{
+		@include transition;
+
+		&:hover{
+			color: darken($grey, 15%);
+		}
+	}
+}
+
+@media only screen
+and (min-width : 30em) { /*480px*/
+	footer{
+
+		p{
+			float: left;
+		}
+
+		ul{
+			float: right;
+			margin: 0;
+		}
+
+		li{
+			margin: 0 0 0 1em;
+		}
+	}
+}
