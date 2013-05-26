@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var headerHeight = $('header').outerHeight();
 		var drawer = $(this).attr('href');
 		var drawerOther = $(this).parents('li').siblings('li').children('.nav-link').attr('href');
-		var drawerHeightNegative = ($(drawer).outerHeight())*-2;
+		var drawerHeightNegative = ($(drawer).outerHeight())*-3;
 
 		if ( $(drawer).hasClass('drawer-hidden') ){
 			$(drawer).css('top', headerHeight);
@@ -16,11 +16,10 @@ $(document).ready(function(){
 			$(drawer).css('top', drawerHeightNegative);
 		}
 
-		//If the other drawer is open, close it upon opening
+		//If the other drawer is open, close it when opening the other one
 		if ( $(drawerOther).hasClass('drawer-active') ){
 			$(drawerOther).addClass('drawer-hidden');
 			$(drawerOther).css('top', drawerHeightNegative);
-			console.log('this is cool');
 		}
 
 		$(drawer).toggleClass('drawer-hidden');
