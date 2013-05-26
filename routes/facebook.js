@@ -25,9 +25,25 @@ exports.ajaxSearchFriends = function (req, res, next) {
 	});
 }
 
-exports.search = function(req, res){
-	res.render('facebook/search', {
-		title: 'Search Facebook'	
+exports.search = function(req, res, next){
+
+	// We want to get all friends via /me/friends
+	var friendsRequestUrl = '/me/friends?access_token=' + req.user.accessToken;
+	console.log("get friends: " + friendsRequestUrl);
+	req.facebook.api(friendsRequestUrl , function(err, data){
+
+		if (err) {
+			console.log("Error retrieving friends: " + err);
+			return next(err);
+		}
+
+		console.log("friends: " + data);
+
+		res.render('facebook/search', {
+			title: 'Search Facebook',
+			friends: data,
+			isAuthenticated: req.isAuthenticated()
+		});
 	});
 }
 

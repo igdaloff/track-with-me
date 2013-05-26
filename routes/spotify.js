@@ -15,6 +15,7 @@ exports.ajaxSearchTracks = function(req, res, next){
 
 exports.search = function(req, res){
 	res.render('spotify/search', {
-		title: 'Search Spotify'	
+		title: 'Search Spotify',
+		isAuthenticated: req.isAuthenticated()	
 	});
 }
