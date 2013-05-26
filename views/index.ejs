@@ -1,19 +1,21 @@
 <% layout('/boilerplate') -%>
 <% stylesheet('/css/generated/styles.css') -%>
 
-<% if (isAuthenticated == true) { %>
-	<p>Welcome, <%= displayName %></p>
-<% } %>
-
-<ul>
-	<% if (isAuthenticated == false) { %>
- 		<li><a href="/auth/facebook">Login with Facebook</a></li>
-	<% } else { %>
-
-	<li><a href='/create'>Create a Date</a></li>
-	<li><a href='/dates'>View Dates</a></li>
-	<li><a href='/searchSpotify'>Search Spotify</a></li>
-	<li><a href='/searchFacebook'>Search Facebook</a></li>
-	<li><a href='/logout'>Logout</a></li>
+<div class="wrapper">
+	<% if (isAuthenticated == true) { %>
+		<p>Welcome, <%= displayName %></p>
 	<% } %>
-</ul>
+
+	<ul>
+		<% if (isAuthenticated == false) { %>
+	 		<li><a href="/auth/facebook">Login with Facebook</a></li>
+		<% } else { %>
+
+		<li><a href='/create'>Create a Date</a></li>
+		<li><a href='/dates'>View Dates</a></li>
+		<li><a href='/searchSpotify'>Search Spotify</a></li>
+		<li><a href='/searchFacebook'>Search Facebook</a></li>
+		<li><a href='/logout'>Logout</a></li>
+		<% } %>
+	</ul>
+</div>

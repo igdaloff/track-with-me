@@ -6,6 +6,7 @@ header{
 	@include box-shadow(0, 2px, 10px, rgba(0,0,0,0.15));
 	border-bottom: 1px solid $grey;
 	background: $white;
+	z-index: 2;
 }
 
 .logo{
@@ -47,6 +48,7 @@ nav{
 	-o-transition: 0.2s all ease;
 	transition: 0.2s all ease;
 	background: $white;
+	z-index: 1;
 }
 
 #login{
