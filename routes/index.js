@@ -7,6 +7,7 @@
 
  	var displayName = '';
  	if (req.isAuthenticated() == true) {
+ 		console.log('user data: ' + req.user);
  		displayName = req.user.displayName;
  	}
 

@@ -16,7 +16,8 @@ exports.list = function(req, res){
 
 exports.form = function(req, res){
 	res.render('dates/create', {
-		title: 'Track With Me!'	
+		title: 'Track With Me!',
+		isAuthenticated: req.isAuthenticated
 	});
 }
 

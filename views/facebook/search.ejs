@@ -1,0 +1,13 @@
+<% layout('/boilerplate') -%>
+<% stylesheet('/css/generated/styles.css') -%>
+<% script('/javascripts/facebook-search.js') -%>
+<h1><%= title %></h1>
+<p>Enter your search term</p>
+<input id='facebook-search-term' type='text' placeholder='Search Term'>
+
+<button id='facebook-search-button'>Search Friends</button>
+
+<p id="searching">Searching...</p>
+
+<div id='facebook-search-results' />
+

@@ -40,7 +40,8 @@ passport.use(new FacebookStrategy({
             { facebookId: profile.id }
           , { $set: 
               { displayName : profile.displayName,
-                picture : pictureUlr }
+                picture : pictureUlr,
+                accessToken: accessToken }
             }
           , function(error, result) {
               if (error) console.log("Error updating user info: " + error);
@@ -51,7 +52,10 @@ passport.use(new FacebookStrategy({
       } 
 
 
-      User.create({ facebookId: profile.id, displayName : profile.displayName, picture : pictureUlr }, function (err, user){
+      User.create({ facebookId: profile.id, 
+                    displayName : profile.displayName, 
+                    picture : pictureUlr, 
+                    accessToken: accessToken}, function (err, user){
         return done(err, user);
       });
     });

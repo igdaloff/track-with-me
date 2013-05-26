@@ -9,7 +9,8 @@ var express = require('express')
   , path = require('path')
   , auth = require('./auth/routes')
   , passport = require('passport')
-  , ajaxTest = require('./routes/ajaxTest')
+  , facebook = require('./routes/facebook');
+
 
 // throwaway
 var spotify = require('./routes/spotify');
@@ -28,6 +29,7 @@ app.use(express.methodOverride());
 app.use(express.cookieSession({ secret: 'S0nJ0l0ve!', maxAge: 360*5 }));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(facebook.Facebook.middleware({ appId: '197017313781062', secret: 'e216a7201d3e0d2e36d6d5ae18f75bdf' }));
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -60,11 +62,13 @@ app.get('/dates', ensureAuthenticated, dates.list);
 app.get('/create', ensureAuthenticated, dates.form);
 app.post('/create', dates.submit);
 
-// Used for ajax call to spotify search
 app.get('/searchSpotify', spotify.search);
-app.get('/spotifySearch', spotify.ajaxSearch);
+app.get('/searchFacebook', facebook.search);
 
-app.get('/ajaxTest', ajaxTest.callAjax);
+// for ajax searching
+app.get('/spotifySearch', spotify.ajaxSearchTracks);
+app.get('/facebookSearch', /* facebook.loginRequired */ ensureAuthenticated, facebook.ajaxSearchFriends);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
