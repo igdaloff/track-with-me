@@ -111,51 +111,6 @@
 }
 
 @media screen {
-  /* Layout */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\000032}}
-  .wrapper {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-
-  /* Colors */
-  /*Typography*/
-  /*Form Elements*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000319}}
-  .button {
-    display: inline-block;
-    height: 2.6em;
-    line-height: 2.6;
-    padding: 0 1em;
-    border-radius: 4px;
-    color: white;
-    font-family: 'LatoBold', helvetica, sans-serif;
-    font-size: 0.9em;
-  }
-
-  /*Icons*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000331}}
-  [data-icon]:before {
-    font-family: 'icomoon';
-    content: attr(data-icon);
-    speak: none;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000342}}
-  .screen-reader-text {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  /*Global Media Queries*/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000313}}
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -190,7 +145,7 @@
     line-height: 1;
     font-size: 62.5%;
     /*1em = 10px*/
-    font-family: "LatoRegular", helvetica, sans;
+    font-family: 'LatoLight', helvetica, sans-serif;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_reset\.scss}line{font-family:\0000332}}
@@ -222,6 +177,57 @@
     color: inherit;
   }
 
+  /* Layout */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\000032}}
+  .wrapper {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  /* Colors */
+  /*Typography*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000318}}
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.25em;
+  }
+
+  /*Form Elements*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000324}}
+  .button {
+    display: inline-block;
+    height: 2.6em;
+    line-height: 2.6;
+    padding: 0 1em;
+    border-radius: 4px;
+    color: white;
+    font-family: 'LatoBold', helvetica, sans-serif;
+    font-size: 0.9em;
+  }
+
+  /*Icons*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000336}}
+  [data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000347}}
+  .screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /*Global Media Queries*/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\000031}}
   header {
     position: relative;
@@ -329,18 +335,17 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000391}}
   .drawer-hidden {
-    top: -100px;
+    top: -500px;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_about\.scss}line{font-family:\000031}}
   #about {
-    position: absolute;
     left: 0;
     width: 100%;
     padding: 2em 0;
     border-bottom: 1px solid #838384;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_about\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_about\.scss}line{font-family:\000037}}
   #about p {
     line-height: 1.4;
     font-size: 1.2em;
@@ -382,21 +387,21 @@
 }
 @media screen and (min-width: 21em) {
   /*336px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000355}}
   body {
     font-size: 75%;
   }
 }
 @media screen and (min-width: 37.5em) {
   /*600px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000361}}
   body {
     font-size: 87.5%;
   }
 }
 @media screen and (min-width: 60em) {
   /*960px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000367}}
   body {
     font-size: 100%;
   }
