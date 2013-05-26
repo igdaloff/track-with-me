@@ -230,30 +230,31 @@
     padding: 1em 0 0.5em;
     -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) ;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) ;
+    border-bottom: 1px solid #838384;
     background: white;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000311}}
   .logo {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000314}}
   .logo a {
     font-family: 'mission_scriptregular', script, serif;
     font-size: 3em;
     color: #d13d27;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000321}}
   nav {
     float: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000324}}
   nav li {
     display: inline-block;
     margin-left: 1.5em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000329}}
   nav i {
     font-size: 1.5em;
     line-height: 1.9;
@@ -264,28 +265,32 @@
     -o-transition: 0.1s all linear;
     transition: 0.1s all linear;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000335}}
   nav i:hover {
     color: #da4d38;
   }
 
   /*LOGIN*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000341}}
-  #login {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000342}}
+  .drawer {
     position: absolute;
-    right: 10%;
     -webkit-transition: 0.2s all ease;
     -moz-transition: 0.2s all ease;
     -ms-transition: 0.2s all ease;
     -o-transition: 0.2s all ease;
     transition: 0.2s all ease;
-    padding: 1em;
-    border-radius: 0 0 4px 4px;
-    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) ;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) ;
     background: white;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000354}}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000352}}
+  #login {
+    right: 10%;
+    padding: 1em;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #838384;
+    border-top: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000359}}
   #login .login-button {
     position: relative;
     background: #4450a4;
@@ -297,11 +302,11 @@
     transition: 0.1s all linear;
     -webkit-backface-visibility: hidden;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000366}}
   #login .login-button:hover {
     background: #4d5ab5;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000370}}
   #login .login-button:before {
     content: 'f';
     font-family: 'icomoon';
@@ -317,14 +322,28 @@
     -webkit-backface-visibility: hidden;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000387}}
   .logout {
     text-decoration: underline;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000386}}
-  .login-hidden {
-    top: -5px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_nav\.scss}line{font-family:\0000391}}
+  .drawer-hidden {
+    top: -100px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_about\.scss}line{font-family:\000031}}
+  #about {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2em 0;
+    border-bottom: 1px solid #838384;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_about\.scss}line{font-family:\000038}}
+  #about p {
+    line-height: 1.4;
+    font-size: 1.2em;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_footer\.scss}line{font-family:\000031}}
@@ -333,7 +352,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 1.5em 0;
+    padding: 2em 0;
     font-size: 0.9em;
     color: #838384;
     text-align: center;
