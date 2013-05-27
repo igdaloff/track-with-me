@@ -1,6 +1,6 @@
 //NAVIGATION SLIDING DRAWERS
 
-$(document).ready(function(){
+$(document).ready( function() {
 
 	$('.nav-link').click( function() {
 
@@ -14,16 +14,26 @@ $(document).ready(function(){
 			$(drawer).addClass('drawer-active');
 		} else {
 			$(drawer).css('top', drawerHeightNegative);
+			$(drawer).removeClass('drawer-active');
 		}
 
 		//If the other drawer is open, close it when opening the other one
 		if ( $(drawerOther).hasClass('drawer-active') ){
 			$(drawerOther).addClass('drawer-hidden');
 			$(drawerOther).css('top', drawerHeightNegative);
+			$(drawerOther).removeClass('drawer-active');
 		}
 
 		$(drawer).toggleClass('drawer-hidden');
 
 		event.preventDefault();
 	});
+
+	$(window).resize( function() {
+		var headerHeight = $('header').outerHeight();
+
+		$('.drawer-active').css('top', headerHeight);
+	});
+
 });
+
