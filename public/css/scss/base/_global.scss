@@ -32,7 +32,7 @@
 	 height: 100%;
 	 z-index:1;
 	 content: '';
-	 opacity: 0.6;
+	 opacity: 0.4;
 	}
 }
 /* Colors */
@@ -40,6 +40,7 @@ $red				:		#d13d27;
 $white			:		#fff;
 $light-grey	: 	#f3f3f3;
 $grey				:		#838384;
+$black			:		#222;
 
 /*Typography*/
 $sans-serif: 'LatoLight', helvetica, sans-serif;
@@ -59,6 +60,11 @@ h2{
 	color: $white;
 	font-family: 'LatoBold', helvetica, sans-serif;
 	font-size: 0.9em;
+	@include transition;
+
+	&:hover{
+		@include box-shadow(0, 1px, 3px, rgba(0,0,0,.35));
+	}
 }
 
 /*Icons*/

@@ -59,11 +59,11 @@ $legacy-support-for-ie8: true;
 
 // Global Transitions
 @mixin transition {
-	-webkit-transition: 0.1s all linear;
-	-moz-transition: 0.1s all linear;
-	-ms-transition: 0.1s all linear;
-	-o-transition: 0.1s all linear;
-	transition: 0.1s all linear;
+	-webkit-transition: 0.25s all ease;
+	-moz-transition: 0.25s all ease;
+	-ms-transition: 0.25s all ease;
+	-o-transition: 0.25s all ease;
+	transition: 0.25s all ease;
 }
 
 

@@ -4,8 +4,23 @@
 	padding: 2em 0;
 	border-bottom: 1px solid $grey;
 
+	h2{
+		font-family: 'LatoRegular', helvetica, sans-serif;
+	}
+
 	p{
 		line-height: 1.4;
 		font-size: 1.2em;
+	}
+
+	span{
+		display: inline-block;
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 100%;
+		font-size: 0.8em;
+		text-align: center;
+		line-height: 1.6;
+		background: $light-grey;
 	}
 }
