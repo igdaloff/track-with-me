@@ -1,4 +1,7 @@
 $(document).ready(function(){
 
-	$('header').css('top',0);
+	//Slide in header on initial page load
+	$('.header-slide').css('top',0);
+	$('header').removeClass('header-slide');
+
 });

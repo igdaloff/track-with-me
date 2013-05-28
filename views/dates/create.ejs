@@ -6,7 +6,7 @@
 		<img class="self-user-image" src="/images/jon-profile.jpg" alt="User Profile image">
 		<div class="friend-user-image-outer">
 			<img class="friend-user-image" src="/images/erica-profile.jpg" alt="Friend Profile image">
-			<a class="add-friend">
+			<a class="add-friend" title="Clicking this link will allow you to choose a friend to share your mix with.">
 				<h3>Click to add a&nbsp;friend</h3>
 			</a>
 		</div>
@@ -19,12 +19,25 @@
 			<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
 		</li>
 		<li class="track-choice-top track-choice">
-			<a href="/searchSpotify" class="add-track">
+			<a href="#music-search" class="add-track call-modal" title="Clicking this link will allow you to search and add music to your mix.">
 				<h3>Click to add your first track</h3>
 			</a>
 			<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
 		</li>
 	</ul>
+
+	<div class="create-date-button">
+		<a href="" class="button">Schedule Date</a>
+	</div>
+
+	<section class="modal-container" id="music-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+    <div class="modal-inner wrapper">
+      <div class="modal-content">
+				This is where Spotify search should go.
+      </div>
+    </div>
+		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
+	</section>
 </div>
 
 
