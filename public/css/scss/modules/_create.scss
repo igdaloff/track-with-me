@@ -1,15 +1,41 @@
 .create-date{
 	position: relative;
-	padding: 10em 0;
+	padding: 8em 0;
+}
+
+.track-choices{
+	@include transition;
+
+	&:hover{
+
+		.track-choice-top{
+			transform: rotate(-5deg);
+			-webkit-transform: rotate(-7.5deg);
+			left:47.5%;
+			margin-top: -1.5em;
+		}
+
+		.track-choice-middle{
+			margin-top: -1.5em;
+		}
+
+		.track-choice-bottom{
+			transform: rotate(-5deg);
+			-webkit-transform: rotate(7.5deg);
+			left: 55%;
+			margin-top: -1.5em;
+		}
+	}
 }
 
 .track-choice{
 	position: absolute;
-	width: 20em;
-	height: 20em;
+	width: 22em;
+	height: 22em;
 	left: 50%;
-	margin-left: -10em;
+	margin-left: -11em;
 	z-index: 1;
+	@include transition;
 
 	img{
 		position: relative;
@@ -22,12 +48,20 @@
 
 .track-choice-bottom{
 	margin-top: -1em;
-	margin-left: -9em;
+	left: 52%;
+
+	&:hover{
+		z-index: 2;
+	}
 }
 
 .track-choice-middle{
 	margin-top: -0.5em;
-	margin-left: -9.5em;
+	left: 51%;
+
+	&:hover{
+		z-index: 2;
+	}
 }
 
 .track-choice-top{
@@ -48,7 +82,7 @@
 	background: $white;
 	color: $grey;
 	text-align: center;
-	line-height: 21em;
+	line-height: 22.5em;
 	border: 1px dashed $grey;
 	border-radius: 1px;
 	@include box-sizing;
@@ -124,7 +158,7 @@
 	h3{
 		display: table-cell;
 		position: relative;
-		padding-top: 1.5em;
+		padding-top: 2.2em;
 		font-size: 1.2em;
 		vertical-align: middle;
 		background: $white;
