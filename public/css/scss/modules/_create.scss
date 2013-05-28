@@ -1,9 +1,6 @@
 .create-date{
-	padding: 8em 0;
-}
-
-.track-choices{
-
+	position: relative;
+	padding: 10em 0;
 }
 
 .track-choice{
@@ -12,6 +9,7 @@
 	height: 20em;
 	left: 50%;
 	margin-left: -10em;
+	z-index: 1;
 
 	img{
 		position: relative;
@@ -23,25 +21,20 @@
 }
 
 .track-choice-bottom{
-	margin-top: -2em;
-	margin-left: -8em;
-}
-
-.track-choice-middle{
 	margin-top: -1em;
 	margin-left: -9em;
 }
 
-.track-choice-top{
-	cursor: pointer;
+.track-choice-middle{
+	margin-top: -0.5em;
+	margin-left: -9.5em;
+}
 
-	.add-track{
-		@include transition;
-	}
+.track-choice-top{
 
 	&:hover .add-track{
 		@include transition;
-		opacity: 1;
+		opacity: 0.95;
 	}
 }
 
@@ -59,6 +52,7 @@
 	border: 1px dashed $grey;
 	border-radius: 1px;
 	@include box-sizing;
+	@include transition;
 	z-index: 1;
 
 	h3{
@@ -76,4 +70,77 @@
 			font-size: 1.6em;
 		}
 	}
+}
+
+/*User Images*/
+.user-images:after{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 10em;
+	height: 1px;
+	background: $grey;
+	content: '';
+	z-index: 1;
+}
+
+.self-user-image, .friend-user-image{
+	position: absolute;
+	top: 6em;
+	width: 8em;
+	height: 8em;
+	border-radius: 100%;
+	border: 1px solid $grey;
+	z-index: 2;
+	@include box-sizing;
+}
+
+.self-user-image{
+	left: 0;
+}
+
+.friend-user-image{
+	right: 0;
+}
+
+.add-friend{
+	display: table;
+	opacity: 0;
+	position: absolute;
+	top: 6em;
+	right: 0;
+	width: 8em;
+	height: 8em;
+	color: $grey;
+	text-align: center;
+	z-index: 10;
+	@include transition;
+
+	&:hover{
+		@include transition;
+		opacity: 0.95;
+	}
+
+	h3{
+		display: table-cell;
+		position: relative;
+		padding-top: 1.5em;
+		font-size: 1.2em;
+		vertical-align: middle;
+		background: $white;
+		border: 1px dashed $grey;
+		border-radius: 100%;
+
+		&:after{
+			position: absolute;
+			left: 50%;
+			top: 0.75em;
+			margin-left: -50%;
+			width: 100%;
+			content: '+';
+			font-family: 'icomoon';
+			font-size: 1.6em;
+		}
+	}
+
 }
