@@ -28,6 +28,10 @@ $(document).ready(function(){
 		console.log("clicked on: " + friendName);
 
 		$('p#friend-name').text(friendName);
+
+		// TODO - navigate to '#!' so modal will automagically close
+		// Not sure that this is the best way - seems hacky
+		window.location.href = '#!';
 		
 	});
 });
