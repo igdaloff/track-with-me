@@ -1,0 +1,79 @@
+.create-date{
+	padding: 8em 0;
+}
+
+.track-choices{
+
+}
+
+.track-choice{
+	position: absolute;
+	width: 20em;
+	height: 20em;
+	left: 50%;
+	margin-left: -10em;
+
+	img{
+		position: relative;
+		max-width: 100%;
+		border: 1px solid $grey;
+		border-radius: 1px;
+		@include box-sizing;
+	}
+}
+
+.track-choice-bottom{
+	margin-top: -2em;
+	margin-left: -8em;
+}
+
+.track-choice-middle{
+	margin-top: -1em;
+	margin-left: -9em;
+}
+
+.track-choice-top{
+	cursor: pointer;
+
+	.add-track{
+		@include transition;
+	}
+
+	&:hover .add-track{
+		@include transition;
+		opacity: 1;
+	}
+}
+
+.add-track{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $white;
+	color: $grey;
+	text-align: center;
+	line-height: 21em;
+	border: 1px dashed $grey;
+	border-radius: 1px;
+	@include box-sizing;
+	z-index: 1;
+
+	h3{
+		position: relative;
+		font-size: 1.2em;
+
+		&:after{
+			position: absolute;
+			left: 50%;
+			top: -1.25em;
+			margin-left: -50%;
+			width: 100%;
+			content: 'm';
+			font-family: 'icomoon';
+			font-size: 1.6em;
+		}
+	}
+}
