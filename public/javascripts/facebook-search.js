@@ -21,6 +21,15 @@ $(document).ready(function(){
 			}
 		});
 	});
+
+	$(document.body).on("click", "ul#facebook-search-results li", function(){
+
+		var friendName = $(this).text();
+		console.log("clicked on: " + friendName);
+
+		$('p#friend-name').text(friendName);
+		
+	});
 });
 
 // recursive, motherfucker.
