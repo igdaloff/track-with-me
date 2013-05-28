@@ -5,7 +5,7 @@
 
 .track-choices{
 	@include transition;
-
+	@include clearfix;
 	&:hover{
 
 		.track-choice-top{
@@ -182,5 +182,18 @@
 			font-size: 1.6em;
 		}
 	}
+}
 
+.create-date-button{
+	display: block;
+	margin-top: 25em;
+	text-align: center;
+
+	.button{
+		background: rgba(0,0,0,.5);
+
+		&:hover{
+			background: $red;
+		}
+	}
 }
