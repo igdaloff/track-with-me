@@ -13,7 +13,7 @@
 			<a href="#friend-search" class="add-friend" title="Clicking this link will allow you to choose a friend to share your mix with.">
 				<h3>Click to add a&nbsp;friend</h3>
 			</a>
-			<p id="friend-name"><p>
+			<p id="friend-name"></p>
 		</div>
 	</div>
 	<ul class="track-choices">
@@ -31,9 +31,33 @@
 		</li>
 	</ul>
 
-	<div class="create-date-button">
-		<a href="" class="button">Schedule Date</a>
-	</div>
+	<!-- Necessary fields:
+
+		var name = req.body.date.name;
+		var date = req.body.date.date;
+		var friend = req.body.date.friend;
+		var song1 = req.body.date.song1;
+		var song2 = req.body.date.song2;
+		var song3 = req.body.date.song3;
+
+	-->
+
+	<form method='post' action='/create' enctype='multipart/form-data'>
+		<input type='hidden' name='date[name]'>
+		<input id="friend-for-date" type='hidden' name='date[friend]'>
+		<input type='hidden' name='date[date]' placeholder='Date'>
+		<input type='hidden' name='date[song1]' placeholder='Song 1'>
+		<input type='hidden' name='date[song2]' placeholder='Song 2'>
+		<input type='hidden' name='date[song3]' placeholder='Song 3'>
+
+		<!-- TODO make this fella hidden, and add an onclick for the good create-date-button to call it -->
+		<input type='submit' value='Schedule Date' />
+
+		
+		<div class="create-date-button">
+			<a href="" class="button">Schedule Date</a>
+		</div>
+	</form>
 
 	<!-- Modal for Spotify track search -->
 	<section class="modal-container" id="music-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
@@ -65,7 +89,7 @@
 					<div>
 						<ul id='facebook-search-results'>
 							<% friends.forEach( function(friend){ %>
-							<li id='<%= friend.id %>'><%= friend.name %></li>
+							<li id='<%= friend.id %> <%= friend.username %>' class='facebook-friend-item'><img src='<%= friend.picture.data.url %>' /><%= friend.name %></li>
 							<% }) %>
 						</ul>
 					</div>

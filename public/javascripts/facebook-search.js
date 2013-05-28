@@ -25,9 +25,20 @@ $(document).ready(function(){
 	$(document.body).on("click", "ul#facebook-search-results li", function(){
 
 		var friendName = $(this).text();
-		console.log("clicked on: " + friendName);
+		var fbData = $(this).attr('id');
+
+		var fbDataArray = fbData.split(' ');
+
+		var fbID = fbDataArray[0];
+		var fbUsername = fbDataArray[1];
+
+		// add ?type=large to the end if we want a larger image
+		var imageUrl = 'https://graph.facebook.com/' + fbUsername + '/picture?type=large'
 
 		$('p#friend-name').text(friendName);
+		$('img.friend-user-image').attr('src', imageUrl)
+		// TODO - fill this in for some hidden form so that we can just use a form submit
+		$('p#friend-for-data').text(fbID);
 
 		// TODO - navigate to '#!' so modal will automagically close
 		// Not sure that this is the best way - seems hacky
