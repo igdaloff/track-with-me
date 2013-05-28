@@ -1,12 +1,16 @@
 <% layout('/boilerplate') -%>
 <% stylesheet('/css/generated/styles.css') -%>
+<% script('/javascripts/spotify-search.js') -%>
+<% script('/javascripts/facebook-search.js') -%>
+
+
 <!-- TODO - No way to actually create date right now -->
 <div class="create-date">
 	<div class="user-images wrapper">
 		<img class="self-user-image" src="/images/jon-profile.jpg" alt="User Profile image">
 		<div class="friend-user-image-outer">
 			<img class="friend-user-image" src="/images/erica-profile.jpg" alt="Friend Profile image">
-			<a class="add-friend" title="Clicking this link will allow you to choose a friend to share your mix with.">
+			<a href="#friend-search" class="add-friend" title="Clicking this link will allow you to choose a friend to share your mix with.">
 				<h3>Click to add a&nbsp;friend</h3>
 			</a>
 		</div>
@@ -30,12 +34,43 @@
 		<a href="" class="button">Schedule Date</a>
 	</div>
 
+	<!-- Modal for Spotify track search -->
 	<section class="modal-container" id="music-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-    <div class="modal-inner wrapper">
-      <div class="modal-content">
-				This is where Spotify search should go.
-      </div>
-    </div>
+		<div class="modal-inner wrapper">
+			<div class="modal-content">
+				<div>
+					<input id='spotify-search-term' type='text' placeholder='Search Term'>
+
+					<button id='spotify-search-button'>Search</button>
+
+					<p id="searching">Searching...</p>
+
+					<div id='spotify-search-results'></div>
+				</div>
+			</div>
+		</div>
+		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
+	</section>
+
+	<!-- Modal for Facebook friend search -->
+	<section class="modal-container" id="friend-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-inner wrapper">
+			<div class="modal-content">
+				<div>
+					<input id='facebook-search-box' type='text' placeholder='Search Term'>
+
+					<button id='facebook-search-button'>Search Friends</button>
+
+					<div>
+						<ul id='facebook-search-results'>
+							<% friends.forEach( function(friend){ %>
+							<li id='<%= friend.id %>'><%= friend.name %></li>
+							<% }) %>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
 	</section>
 </div>

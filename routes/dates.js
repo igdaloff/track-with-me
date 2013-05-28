@@ -1,7 +1,10 @@
 var Date = require('../models/Date');
 var path = require('path');
 var fs = require('fs');
+var facebook = require('../modules/facebook.js');
 var join = path.join;
+
+var mock = true;
 
 exports.list = function(req, res){
 	Date.find({}, function(err, dates){
@@ -15,10 +18,40 @@ exports.list = function(req, res){
 }
 
 exports.form = function(req, res){
-	res.render('dates/create', {
-		title: 'Track With Me!',
-		isAuthenticated: req.isAuthenticated()
-	});
+
+	if (mock) {
+
+		var friendsArray =  [{name: 'Erica Ermann'}, {name: 'Jon Solove'}, {name: 'Nathan Igdaloff'}]
+		res.render('dates/create', {
+			friends: friendsArray,
+			isAuthenticated: req.isAuthenticated()
+		});
+
+	} else {
+
+		// preload the facebook friends (via /me/friends)
+		facebook.getFbData(req.user.accessToken, '/me/friends', function(data){
+			
+			var friendsJson = JSON.parse(data);
+
+			var friendsArray = friendsJson.data
+
+			// sort friends data
+			friendsArray.sort(function(a, b){
+				if (a.name < b.name) {
+					return -1;
+				} else if (a.name > b.name) {
+					return 1;
+				}
+				return 0;
+			});
+
+			res.render('dates/create', {
+				friends: friendsArray,
+				isAuthenticated: req.isAuthenticated()
+			});
+		});
+	}
 }
 
 exports.submit = function (dir) {
