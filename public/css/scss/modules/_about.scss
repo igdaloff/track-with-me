@@ -4,6 +4,11 @@
 	padding: 2em 0;
 	border-bottom: 1px solid $grey;
 
+	.wrapper{
+		width: 70%;
+		text-align: center;
+	}
+
 	h2{
 		font-family: 'LatoRegular', helvetica, sans-serif;
 	}

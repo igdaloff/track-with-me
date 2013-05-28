@@ -7,7 +7,7 @@ header{
 	@include box-shadow(0, 2px, 10px, rgba(0,0,0,0.15));
 	border-bottom: 1px solid $grey;
 	background: $white;
-	z-index: 2;
+	z-index: 1000;
 	transition: 0.6s top ease-in-out;
 }
 
@@ -43,7 +43,7 @@ nav{
 		@include transition;
 
 		&:hover{
-			color: lighten($red, 5%);
+			color: lighten($red, 10%);
 		}
 	}
 }
@@ -53,7 +53,7 @@ nav{
 	position: absolute;
 	@include transition;
 	background: $white;
-	z-index: 1;
+	z-index: 2;
 }
 
 #login{
