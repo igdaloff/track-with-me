@@ -1,16 +1,30 @@
 <% layout('/boilerplate') -%>
 <% stylesheet('/css/generated/styles.css') -%>
-<h1><%= title %></h1>
-<p>Build your date!</p>
-<form method='post' enctype='multipart/form-data'>
-	<p><input type='text', name='date[name]', placeholder='Name'></p>
-	<p><input type='text', name='date[friend]', placeholder='Friend'></p>
-	<p><input type='text', name='date[date]', placeholder='Date'></p>
-	<p><input type='text', name='date[song1]', placeholder='Song 1'></p>
-	<p><input type='text', name='date[song2]', placeholder='Song 2'></p>
-	<p><input type='text', name='date[song3]', placeholder='Song 3'></p>
-
-	<p><input type='submit', value='Track With Me' /></p>
-</form>
+<!-- TODO - No way to actually create date right now -->
+<div class="create-date">
+	<div class="user-images wrapper">
+		<img class="self-user-image" src="/images/jon-profile.jpg" alt="User Profile image">
+		<div class="friend-user-image-outer">
+			<img class="friend-user-image" src="/images/erica-profile.jpg" alt="Friend Profile image">
+			<a class="add-friend">
+				<h3>Click to add a&nbsp;friend</h3>
+			</a>
+		</div>
+	</div>
+	<ul class="track-choices">
+		<li class="track-choice-bottom track-choice">
+			<img src="/images/weeknd-cover-small.jpg" alt="Album Cover 3">
+		</li>
+		<li class="track-choice-middle track-choice">
+			<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
+		</li>
+		<li class="track-choice-top track-choice">
+			<a href="/searchSpotify" class="add-track">
+				<h3>Click to add your first track</h3>
+			</a>
+			<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
+		</li>
+	</ul>
+</div>
 
 
