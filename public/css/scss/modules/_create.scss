@@ -9,8 +9,11 @@
 	&:hover{
 
 		.track-choice-top{
-			transform: rotate(-5deg);
+			-moz-transform: rotate(-7.5deg);
+			-ms-transform: rotate(-7.5deg);
+			-o-transform: rotate(-7.5deg);
 			-webkit-transform: rotate(-7.5deg);
+			transform: rotate(-7.5deg);
 			left:47.5%;
 			margin-top: -1.5em;
 		}
@@ -20,8 +23,11 @@
 		}
 
 		.track-choice-bottom{
-			transform: rotate(-5deg);
+			-moz-transform: rotate(7.5deg);
+			-ms-transform: rotate(7.5deg);
+			-o-transform: rotate(7.5deg);
 			-webkit-transform: rotate(7.5deg);
+			transform: rotate(7.5deg);
 			left: 55%;
 			margin-top: -1.5em;
 		}
