@@ -21,13 +21,31 @@ exports.form = function(req, res){
 
 	if (mock) {
 
-		var friendsArray =  [{name: 'Erica Ermann'}, {name: 'Jon Solove'}, {name: 'Nathan Igdaloff'}]
-		res.render('dates/create', {
-			friends: friendsArray,
-			isAuthenticated: req.isAuthenticated()
-		});
+		var friendsArray =  [
+		{	id: '123123', 
+		name: 'Erica Ermann', 
+		username: 'ericaermann', 
+		picture: 
+		{ 	data: { 
+			url: 'images/erica-profile.jpg'
+		}
+	}
+}, 
+{	id: '123456', 
+name: 'Jon Solove', 
+username: 'jon.solove', 
+picture: 
+{ 	data: { 
+	url: 'images/jon-profile.jpg'
+}
+}
+}]
+res.render('dates/create', {
+	friends: friendsArray,
+	isAuthenticated: req.isAuthenticated()
+});
 
-	} else {
+} else {
 		// example JSON response:
 		/* 
 			"data": [
@@ -72,7 +90,10 @@ exports.form = function(req, res){
 
 exports.submit = function (req, res, next) {
 
+
 	console.log("called submit");
+
+	console.log("request: " + req.body);
 
 	var name = req.body.date.name;
 	var date = req.body.date.date;
@@ -81,9 +102,12 @@ exports.submit = function (req, res, next) {
 	var song2 = req.body.date.song2;
 	var song3 = req.body.date.song3;
 
+	console.log("friend: " + friend);
+
 	// this does not currently contain the current user's info - need to pull that from session
 	Date.create({
-		name: name,
+		user: req.user.facebookId,
+		title: name,
 		date: date,
 		friend: friend,
 		song1: song1,
@@ -93,5 +117,4 @@ exports.submit = function (req, res, next) {
 		if (err) return next(err);
 		res.redirect('/');
 	});
-
 }

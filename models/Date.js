@@ -2,7 +2,8 @@ var mongoose = require('mongoose')
 mongoose.createConnection('mongodb://localhost/track_with_me');
 
 var schema = new mongoose.Schema({
-	name: String,
+	user: String,
+	title: String,
 	friend: String,
 	date: Date,
 	song1: String,
