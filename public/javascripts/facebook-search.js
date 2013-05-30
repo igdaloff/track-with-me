@@ -39,7 +39,7 @@ $(document).ready(function(){
 		$('img.friend-user-image').attr('src', imageUrl)
 		
 		// TODO - fill this in for some hidden form so that we can just use a form submit
-		$('input#friend-for-date').text(fbID);
+		$('input#friend-for-date').val(fbID);
 
 		// TODO - navigate to '#!' so modal will automagically close
 		// Not sure that this is the best way - seems hacky
