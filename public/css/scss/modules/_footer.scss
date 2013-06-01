@@ -1,9 +1,10 @@
 footer{
-	position: fixed;
-	bottom: 0;
-	left: 0;
+	display: inline-block;
+	height: 5em;
+	line-height: 1em;
+	margin: 6em 0 -10px;
+	padding-top: 2em;
 	width: 100%;
-	padding: 2em 0;
 	font-size: 0.9em;
 	color: $grey;
 	text-align: center;
@@ -31,6 +32,9 @@ footer{
 @media only screen
 and (min-width : 30em) { /*480px*/
 	footer{
+		height: 4em;
+		line-height: 4em;
+		padding: 0;
 
 		p{
 			float: left;
