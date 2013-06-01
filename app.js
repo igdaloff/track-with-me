@@ -58,6 +58,7 @@ app.get('/logout', function(req, res){
 
 app.get('/', routes.index);
 app.get('/dates', ensureAuthenticated, dates.list);
+app.get('/date', ensureAuthenticated, dates.date);
 app.get('/create', ensureAuthenticated, dates.form);
 app.post('/create', dates.submit);
 

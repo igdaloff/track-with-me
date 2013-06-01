@@ -1,0 +1,39 @@
+<% layout('/boilerplate') -%>
+<% stylesheet('/css/generated/styles.css') -%>
+<% script('/javascripts/date.js') -%>
+
+<!-- TODO - Nothing here is based on actual dates.  This is just a holder. -->
+<div class="create-date">
+	<div class="user-images wrapper">
+		<img class="self-user-image" src="/images/jon-profile.jpg" alt="User Profile image">
+		<div class="friend-user-image-outer">
+			<img class="friend-user-image" src="/images/erica-profile.jpg" alt="Friend Profile image">
+		</div>
+	</div>
+
+	<!-- TODO - currently is not dynamic -->
+	<ul class="track-choices">
+		<li class="track-choice-bottom track-choice">
+			<img src="/images/weeknd-cover-small.jpg" alt="Album Cover 3">
+		</li>
+		<li class="track-choice-middle track-choice">
+			<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
+		</li>
+		<li class="track-choice-top track-choice">
+			<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
+		</li>
+	</ul>
+
+	<!-- DATE TITLE / PROGRESS (belongs in date.ejs when it exists)-->
+	<div id="date-bar">
+		<span id="date-progress"></span>
+		<div class="wrapper">
+			<span class="mix-time">2:33 / 18:45</span>
+			<h2>Summer Jamz</h2>
+			<span class="date-date">Dec. 20, 2013 9:00PM</span>
+		</div>
+	</div>
+
+</div>
+
+

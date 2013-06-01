@@ -88,6 +88,12 @@ res.render('dates/create', {
 	}
 }
 
+exports.date = function (req, res, next) {
+	res.render('dates/date', {
+		isAuthenticated: req.isAuthenticated()
+	})
+}
+
 exports.submit = function (req, res, next) {
 
 
