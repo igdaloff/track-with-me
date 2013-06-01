@@ -1,6 +1,6 @@
 .create-date{
 	position: relative;
-	padding: 8em 0;
+	padding: 6em 0 4em;
 }
 
 .track-choices{
@@ -113,15 +113,19 @@
 }
 
 /*User Images*/
-.user-images:after{
-	width: 100%;
-	position: absolute;
-	left: 0;
-	top: 10em;
-	height: 1px;
-	background: $grey;
-	content: '';
-	z-index: 1;
+.user-images{
+	max-width:820px;
+
+	&:after{
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 10em;
+		height: 1px;
+		background: $grey;
+		content: '';
+		z-index: 1;
+	}
 }
 
 .self-user-image, .friend-user-image{

@@ -1,0 +1,52 @@
+#date-bar{
+	position: relative;
+	width: 100%;
+	height: 4em;
+	margin-top: 4em;
+	background: rgba(0,0,0,.5);
+	color: $white;
+	line-height: 4em;
+	@include clearfix;
+
+	&:before{
+		position: absolute;
+		content: '';
+		left: 50%;
+		top: -12px;
+		width: 0;
+		height: 0;
+		margin-left: -12px;
+		border-left: 12px solid transparent;
+		border-right: 12px solid transparent;
+		border-bottom: 12px solid rgba(0,0,0,.5);
+	}
+
+	.progress{
+		position: absolute;
+		height: 4em;
+		left: 0;
+		top: 0;
+		background: $red;
+		width: 20%;
+	}
+
+	h2{
+		float: left;
+		width: 50%;
+		margin: 0;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.mix-time, .date-date{
+	position: relative;
+	float: left;
+	width: 25%;
+	z-index: 1;
+}
+
+.date-date{
+	text-align: right;
+}

@@ -58,6 +58,16 @@
 		</div>
 	</form>
 
+	<!-- DATE TITLE / PROGRESS -->
+	<div id="date-bar">
+		<span class="progress"></span>
+		<div class="wrapper">
+			<span class="mix-time">2:33 / 18:45</span>
+			<h2>Summer Jamz</h2>
+			<span class="date-date">Dec. 20, 2013 9:00PM</span>
+		</div>
+	</div>
+
 	<!-- Modal for Spotify track search -->
 	<section class="modal-container" id="music-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 		<div class="modal-inner wrapper">
@@ -86,11 +96,13 @@
 					<button id='facebook-search-button'>Search Friends</button>
 
 					<div>
+<!--
 						<ul id='facebook-search-results'>
 							<% friends.forEach( function(friend){ %>
 							<li id='<%= friend.id %> <%= friend.username %>' class='facebook-friend-item'><img src='<%= friend.picture.data.url %>' /><%= friend.name %></li>
 							<% }) %>
 						</ul>
+-->
 					</div>
 				</div>
 			</div>
