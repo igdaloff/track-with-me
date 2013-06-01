@@ -32,21 +32,43 @@
 
 	h2{
 		float: left;
-		width: 50%;
+		width: 60%;
 		margin: 0;
-		text-align: center;
 		position: relative;
 		z-index: 1;
 	}
 }
 
-.mix-time, .date-date{
-	position: relative;
-	float: left;
-	width: 25%;
-	z-index: 1;
+.mix-time{
+	float: right;
 }
 
 .date-date{
-	text-align: right;
+	display: none;
+}
+
+@media only screen
+and (min-width : 52em) { /*832px*/
+	#date-bar{
+
+		h2{
+			text-align: center;
+		}
+
+		.mix-time, .date-date{
+			position: relative;
+			float: left;
+			width: 20%;
+			font-size: 0.9em;
+			z-index: 1;
+		}
+
+		.date-date{
+			display: block;
+			float: right;
+			text-align: right;
+			float: right;
+		}
+
+	}
 }

@@ -714,24 +714,20 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000333}}
   #date-bar h2 {
     float: left;
-    width: 50%;
+    width: 60%;
     margin: 0;
-    text-align: center;
     position: relative;
     z-index: 1;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000343}}
-  .mix-time, .date-date {
-    position: relative;
-    float: left;
-    width: 25%;
-    z-index: 1;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000342}}
+  .mix-time {
+    float: right;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000346}}
   .date-date {
-    text-align: right;
+    display: none;
   }
 
   /**
@@ -924,6 +920,28 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003103}}
   body {
     font-size: 100%;
+  }
+}
+@media only screen and (min-width: 52em) {
+  /*832px*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000354}}
+  #date-bar h2 {
+    text-align: center;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000358}}
+  #date-bar .mix-time, #date-bar .date-date {
+    position: relative;
+    float: left;
+    width: 20%;
+    font-size: 0.9em;
+    z-index: 1;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000366}}
+  #date-bar .date-date {
+    display: block;
+    float: right;
+    text-align: right;
+    float: right;
   }
 }
 @media screen and (max-width: 690px) {
