@@ -703,13 +703,13 @@
     border-bottom: 12px solid rgba(0, 0, 0, 0.5);
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000324}}
-  #date-bar .progress {
+  #date-bar #date-progress {
     position: absolute;
     height: 4em;
     left: 0;
     top: 0;
     background: #d13d27;
-    width: 20%;
+    width: 0;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000333}}
   #date-bar h2 {
