@@ -867,16 +867,16 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_footer\.scss}line{font-family:\000031}}
   footer {
-    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     height: 5em;
     line-height: 1em;
-    margin: 6em 0 -10px;
     padding-top: 2em;
     width: 100%;
     font-size: 0.9em;
     color: #838384;
     text-align: center;
-    border-top: 1px solid #838384;
     background: rgba(255, 255, 255, 0.8);
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_footer\.scss}line{font-family:\0000314}}

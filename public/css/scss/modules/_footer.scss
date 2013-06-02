@@ -1,14 +1,14 @@
 footer{
-	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
 	height: 5em;
 	line-height: 1em;
-	margin: 6em 0 -10px;
 	padding-top: 2em;
 	width: 100%;
 	font-size: 0.9em;
 	color: $grey;
 	text-align: center;
-	border-top: 1px solid $grey;
 	background: rgba($white, 0.8);
 
 	ul{
