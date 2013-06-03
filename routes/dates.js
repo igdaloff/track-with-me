@@ -23,30 +23,33 @@ exports.form = function(req, res){
 	if (mock) {
 
 		var friendsArray =  [
+		
 		{	id: '123123', 
-		name: 'Erica Ermann', 
-		username: 'ericaermann', 
-		picture: 
-		{ 	data: { 
-			url: 'images/erica-profile.jpg'
-		}
-	}
-}, 
-{	id: '123456', 
-name: 'Jon Solove', 
-username: 'jon.solove', 
-picture: 
-{ 	data: { 
-	url: 'images/jon-profile.jpg'
-}
-}
-}]
-res.render('dates/create', {
-	friends: friendsArray,
-	isAuthenticated: req.isAuthenticated()
-});
+			name: 'Erica Ermann', 
+			username: 'ericaermann', 
+			picture: 
+			{ 	data: { 
+					url: 'images/erica-profile.jpg'
+				}
+			}
+		}, 
+		{	id: '123456', 
+			name: 'Jon Solove', 
+			username: 'jon.solove', 
+			picture: 
+			{ 	data: { 
+				url: 'images/jon-profile.jpg'
+			}
+			}
+			
+		}]
+		
+		res.render('dates/create', {
+			friends: friendsArray,
+			isAuthenticated: req.isAuthenticated()
+		});
 
-} else {
+	} else {
 		// example JSON response:
 		/* 
 			"data": [
@@ -90,9 +93,18 @@ res.render('dates/create', {
 }
 
 exports.date = function (req, res, next) {
-	res.render('dates/date', {
-		isAuthenticated: req.isAuthenticated()
-	})
+	
+	console.log("req.query.id: " + req.query.id);
+	
+	Date.findOne({_id: req.query.id}, function(err, date){
+		if (err) return next(err);
+
+		res.render('dates/date', {
+			title: 'Date',
+			date: date,
+			isAuthenticated: req.isAuthenticated()
+		});
+	});
 }
 
 exports.submit = function (req, res, next) {
