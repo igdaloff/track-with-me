@@ -6,6 +6,20 @@
 .track-choices{
 	@include transition;
 	@include clearfix;
+
+	&:hover .add-track {
+		opacity: 1;
+	}
+
+	&:hover	li{
+		background: $white;
+		border: 1px dashed $grey;
+
+		img{
+			opacity: 0;
+		}
+	}
+
 	&:hover{
 
 		.track-choice-top{
@@ -70,14 +84,6 @@
 	}
 }
 
-.track-choice-top{
-
-	&:hover .add-track{
-		@include transition;
-		opacity: 0.95;
-	}
-}
-
 .add-track{
 	opacity: 0;
 	position: absolute;
@@ -85,14 +91,10 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: $white;
 	color: $grey;
 	text-align: center;
 	line-height: 22.5em;
-	border: 1px dashed $grey;
-	border-radius: 1px;
 	@include box-sizing;
-	@include transition;
 	z-index: 1;
 
 	h3{
