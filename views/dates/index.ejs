@@ -5,7 +5,7 @@
 <div id="dates">
 	<% dates.forEach(function(date) { %>
 	<div class="date">
-		<h2><%= date.name %></h2>
+		<h2><%= date.title %></h2>
 		<p>With: <%= date.friend %></p>
 		<p>On: <%= date.date %></p>
 		<ul>
@@ -13,6 +13,7 @@
 			<li><%= date.song2 %></li>
 			<li><%= date.song3 %></li>
 		</ul>
+		<a href="/date?id=<%= date._id %>">View</a>
 	</div>
 	<% 	}) %>
 </div>

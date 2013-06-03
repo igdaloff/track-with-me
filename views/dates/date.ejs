@@ -2,13 +2,11 @@
 <% stylesheet('/css/generated/styles.css') -%>
 <% script('/javascripts/date.js') -%>
 
-
-<!-- TODO - Nothing here is based on actual dates.  This is just a holder. -->
 <div class="create-date">
 	<div class="user-images wrapper">
 		<img class="self-user-image" src="/images/jon-profile.jpg" alt="User Profile image">
 		<div class="friend-user-image-outer">
-			<img class="friend-user-image" src="/images/erica-profile.jpg" alt="Friend Profile image">
+			<img class="friend-user-image" src="https://graph.facebook.com/<%= date.friend %>/picture?type=large" alt="Friend Profile image">
 		</div>
 	</div>
 
@@ -39,7 +37,7 @@
 		<span id="date-progress"></span>
 		<div class="wrapper">
 			<span class="mix-time">2:33 / 18:45</span>
-			<h2>Summer Jamz</h2>
+			<h2><%= date.title %></h2>
 			<span class="date-date">Dec. 20, 2013 9:00PM</span>
 		</div>
 	</div>
