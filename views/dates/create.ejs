@@ -1,5 +1,6 @@
 <% layout('/boilerplate') -%>
 <% stylesheet('/css/generated/styles.css') -%>
+<% script('/javascripts/unveil-min.js') -%>
 <% script('/javascripts/spotify-search.js') -%>
 <% script('/javascripts/facebook-search.js') -%>
 <% script('/javascripts/date.js') -%>
@@ -97,13 +98,13 @@
 					<button id='facebook-search-button'>Search Friends</button>
 
 					<div>
-<!--
 						<ul id='facebook-search-results'>
 							<% friends.forEach( function(friend){ %>
-							<li id='<%= friend.id %> <%= friend.username %>' class='facebook-friend-item'><img src='<%= friend.picture.data.url %>' /><%= friend.name %></li>
+								<li id='<%= friend.id %> <%= friend.username %>' class='facebook-friend-item'>
+									<img class='facebook-image' src='' data-src='<%= friend.picture.data.url %>' /><%= friend.name %>
+								</li>
 							<% }) %>
 						</ul>
--->
 					</div>
 				</div>
 			</div>
