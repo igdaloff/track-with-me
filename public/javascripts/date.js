@@ -6,12 +6,17 @@ $(document).ready( function() {
 	  width: '100%'
 	}, mixDuration, 'linear');
 
-	$('img.facebook-image').unveil();
+	$('img.facebook-image').unveil(200);
 
 	/* 	Sorta bastardizing Unveil (http://luis-almeida.github.io/unveil/), 
 		but this will work for now.  Doesn't load image until you go into 
 		the add-friends modal.  This is ugly, i'd like to get regular unveil 
-		to work...                                                   			*/
+		to work.
+
+		It seems that the modal makes something get weird here, so I'm forcing
+		the unveil event when the modal is opened.  This way, we're not loading
+		images until the modal pops open.  Then it's still kinda hacky, though.
+					                                                			*/
 
 	$('a.add-friend').click(function(){
 		$('img.facebook-image').trigger("unveil");
