@@ -27,7 +27,7 @@
 		</li>
 		<li class="track-choice-top track-choice">
 			<a href="#music-search" class="add-track call-modal" title="Clicking this link will allow you to search and add music to your mix.">
-				<h3>Click to add your songs to your mix</h3>
+				<h3>Click to add songs to your mix</h3>
 			</a>
 			<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
 		</li>
@@ -58,28 +58,21 @@
 		</div>
 	</form>
 
-	<!-- DATE TITLE / PROGRESS (belongs in date.ejs when it exists)-->
-	<div id="date-bar">
-		<span id="date-progress"></span>
-		<div class="wrapper">
-			<span class="mix-time">2:33 / 18:45</span>
-			<h2>Summer Jamz</h2>
-			<span class="date-date">Dec. 20, 2013 9:00PM</span>
-		</div>
-	</div>
-
 	<!-- Modal for Spotify track search -->
 	<section class="modal-container" id="music-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 		<div class="modal-inner wrapper">
 			<div class="modal-content">
 				<div>
-					<input id='spotify-search-term' type='text' placeholder='Search Term'>
+					<h2>Select 3 Songs</h2>
+					<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
+					<input id='spotify-search-term' type='text' placeholder='Search for music'>
 
 					<button id='spotify-search-button'>Search</button>
 
 					<p id="searching">Searching...</p>
 
-					<div id='spotify-search-results'></div>
+					<div id='spotify-search-results'>
+					</div>
 				</div>
 			</div>
 		</div>

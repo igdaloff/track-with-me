@@ -52,19 +52,37 @@ h2{
 }
 
 /*Form Elements*/
-.button{
+.button, button{
 	display: inline-block;
-	height: 2.6em;
-	line-height: 2.7;
+	height: 2.5em;
+	line-height: 2.6;
 	padding: 0 1.5em;
+	border: none;
 	border-radius: 4px;
 	color: $white;
 	font-family: 'LatoBold', helvetica, sans-serif;
 	font-size: 0.9em;
+	cursor: pointer;
 	@include transition;
 
 	&:hover{
 		@include box-shadow(0, 1px, 3px, rgba(0,0,0,.35));
+	}
+}
+
+input, .input{
+	border: 1px solid $grey;
+	border-radius: 4px;
+	height: 2.5em;
+	padding-left: 0.5em;
+	font-family: 'LatoLight', helvetica, sans-serif;
+	font-size: 0.9em;
+	@include box-sizing;
+	@include transition;
+
+	&:focus{
+		outline: none;
+		@include box-shadow(0, 1px, 3px, rgba(0,0,0,.20) inset);
 	}
 }
 

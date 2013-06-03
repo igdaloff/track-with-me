@@ -1,7 +1,7 @@
 var songIndex = 0;
 
-$(document).ready(function(){  
-	
+$(document).ready(function(){
+
 	$("#searching").hide();
 
 	$(document.body).on("click", "ul#results-list li", function(){
@@ -15,7 +15,7 @@ $(document).ready(function(){
 		if (songIndex > 3) {
 			alert("You've already selected 3 songs.");
 		} else {
-		
+
 			// set the proper song field
 			$('input#date-song' + songIndex).val(spotifyUri);
 		}
@@ -39,20 +39,20 @@ $(document).ready(function(){
 			global: true
 
 		}).done (function (data) {
-			
+
 			var tracks = data.tracks;
 
 			console.log("returned " + tracks.length + " tracks");
 
-			var htmlString = "<p>Results:</p><ul id='results-list'>";
+			var htmlString = "<ul id='results-list'>";
 
 			// tracks.forEach(function(track){
 			for (var i = 0; i < tracks.length; i++) {
 				track = tracks[i];
-				htmlString += "<li id='" + track.href + "'>" + track.artists[0].name + " - " + track.name + "</li>";
+				htmlString += "<li id='" + track.href + "'>" + "<span class='search-track-name'>" + track.name + "</span>" + "<span class='search-artist-name'>" + track.artists[0].name + "</span>" +"</li>";
 			}
-			
-			$('#spotify-search-results').append(htmlString + '</ul>');
+
+			$('#spotify-search-results').append(htmlString + '</ul>').prepend("<h3 class='search-results-title' >Spotify search results for \"" + searchTerm + "\"</h3>" + "<div class='track-search-headers'><h4 class='search-name-header'>Track</h4><h4 class='search-artist-header'>Artist</h4></div>");
 		});
 	});
 });

@@ -61,7 +61,7 @@ html {
   z-index: 20;
   margin-left: -40%;
   overflow-x: hidden;
-  border-radius: 1px;
+  border-radius: 4px;
   background: $white;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
@@ -69,8 +69,7 @@ html {
 
 .modal-container .modal-content {
   max-height: 400px;
-  max-height: 70vh;
-  padding: 15px 1.2em;
+  padding: 3em 4em 4em;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -110,6 +109,11 @@ html {
   text-indent: 0;
   border-radius: 100%;
 	line-height: 1.5;
+	@include transition;
+
+	&:hover{
+		background: darken($red, 10%);
+	}
 }
 
 @media screen and (max-width: 690px) {

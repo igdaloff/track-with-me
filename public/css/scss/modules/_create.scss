@@ -164,7 +164,7 @@
 
 	&:hover{
 		@include transition;
-		opacity: 0.95;
+		opacity: 1;
 	}
 
 	h3{
@@ -202,4 +202,89 @@
 			background: $red;
 		}
 	}
+}
+
+/*CHOOSE MUSIC MODAL*/
+#music-search{
+
+	p{
+		margin-bottom: 1em;
+	}
+
+}
+#spotify-search-term{
+	float: left;
+	width: 25%;
+	margin-right: 0.5em;
+}
+
+#spotify-search-button{
+	background: $red;
+
+	&:hover{
+		background: lighten($red, 2%);
+	}
+}
+
+#results-list{
+
+	li{
+		cursor: pointer;
+	}
+
+}
+
+#searching{
+	margin-top: 2em;
+	font-family: 'LatoBold', helvetica, sans-serif;
+}
+
+#results-list{
+	background: $light-grey;
+	border-left: 1px solid $grey;
+	border-right: 1px solid $grey;
+
+	li{
+		padding: 0.25em 0.5em;
+		border-bottom: 1px solid $grey;
+
+		&:last-child{
+			border-radius: 0 0 4px 4px;
+		}
+
+		&:nth-child(odd){
+			background: $white;
+		}
+	}
+}
+
+.search-results-title{
+	font-family: 'LatoBold', helvetica, sans-serif;
+	margin-top: 2em;
+}
+
+.track-search-headers{
+	padding: 0.25em 0.5em;
+	margin-top: 1em;
+	border: 1px solid $grey;
+	border-radius: 4px 4px 0 0;
+	background: $light-grey;
+
+	h4{
+		display: inline-block;
+		font-family: 'LatoBold', helvetica, sans-serif;
+	}
+}
+
+.search-name-header{
+	width: 27.5%;
+}
+
+.search-track-name{
+	display: inline-block;
+	width: 25%;
+	margin-right: 2.5%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
