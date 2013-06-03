@@ -33,13 +33,12 @@ $(document).ready(function(){
 		var fbUsername = fbDataArray[1];
 
 		// add ?type=large to the end if we want a larger image
-		var imageUrl = 'https://graph.facebook.com/' + fbUsername + '/picture?type=large'
+		var imageUrl = 'https://graph.facebook.com/' + fbID + '/picture?type=large'
 
-		$('p#friend-name').text(friendName);
 		$('img.friend-user-image').attr('src', imageUrl)
 		
 		// TODO - fill this in for some hidden form so that we can just use a form submit
-		$('input#friend-for-date').val(fbID);
+		$('input#date-friend').val(fbID);
 
 		// TODO - navigate to '#!' so modal will automagically close
 		// Not sure that this is the best way - seems hacky

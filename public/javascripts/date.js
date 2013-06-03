@@ -22,6 +22,17 @@ $(document).ready( function() {
 		$('img.facebook-image').trigger("unveil");
 	})
 
+	$('div.create-date-button').click(function(e){
+
+		e.preventDefault();
+		console.log("clicked create-date-button");
+		// TODO - validate that everything is good
+		var errorMessage = ''
+		
+
+		$('#date-form').submit();
+	});
+
 	
 });
 

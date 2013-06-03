@@ -1,3 +1,5 @@
+var songIndex = 0;
+
 $(document).ready(function(){  
 	
 	$("#searching").hide();
@@ -8,10 +10,15 @@ $(document).ready(function(){
 		var spotifyUri = $(this).attr('id');
 		console.log('clicked on: ' + spotifyUri);
 
-		var spotifyPlayIFrame = "<iframe src='https://embed.spotify.com/?uri=" 
-			+ spotifyUri + "' width='300' height='380' frameborder='0' allowtransparency='true'></iframe>";
+		songIndex++;
 
-		$('#play-div').append(spotifyPlayIFrame);
+		if (songIndex > 3) {
+			alert("You've already selected 3 songs.");
+		} else {
+		
+			// set the proper song field
+			$('input#date-song' + songIndex).val(spotifyUri);
+		}
 	});
 
 	$('#spotify-search-button').click(function(){

@@ -44,16 +44,14 @@
 
 	-->
 
-	<form method='post' action='/create'>
-		<input type='hidden' name='date[name]'>
-		<input id="friend-for-date" type='text' name='date[friend]'>
-		<input type='hidden' name='date[date]' >
-		<input type='hidden' name='date[song1]'>
-		<input type='hidden' name='date[song2]'>
-		<input type='hidden' name='date[song3]'>
-
-		<!-- TODO make this fella hidden, and add an onclick for the good create-date-button to call it -->
-		<input type='submit' value='Schedule Date' />
+	<!-- Hidden form to submit shit once it's done -->
+	<form id='date-form' method='post' action='/create'>
+		<input type='hidden' id='date-name' name='date[name]'>
+		<input type='hidden' id="date-friend" name='date[friend]'>
+		<input type='hidden' id='date-date' name='date[date]' >
+		<input type='hidden' id='date-song1' name='date[song1]'>
+		<input type='hidden' id='date-song2' name='date[song2]'>
+		<input type='hidden' id='date-song3' name='date[song3]'>
 
 		<div class="create-date-button">
 			<a href="" class="button">Schedule Date</a>
