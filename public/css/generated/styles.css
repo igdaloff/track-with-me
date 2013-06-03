@@ -670,7 +670,50 @@
     background: #d13d27;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\000031}}
+  /*TRACK DETAILS*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\000032}}
+  .track-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5em;
+    background: rgba(255, 255, 255, 0.9);
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000310}}
+  .track-details li {
+    margin-bottom: 0.25em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000314}}
+  .track-details .album-name {
+    margin-bottom: 0;
+    font-style: italic;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000320}}
+  .artist-name {
+    font-size: 1.1em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000324}}
+  .track-time {
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000330}}
+  #track-progress {
+    position: absolute;
+    top: -0.25em;
+    left: 0;
+    width: 0;
+    height: 0.25em;
+    background: #d13d27;
+  }
+
+  /*DATE TITLE, PROGRESS, TIME*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000340}}
   #date-bar {
     position: relative;
     width: 100%;
@@ -689,7 +732,7 @@
   #date-bar:after {
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000350}}
   #date-bar:before {
     position: absolute;
     content: '';
@@ -702,7 +745,7 @@
     border-right: 12px solid transparent;
     border-bottom: 12px solid rgba(0, 0, 0, 0.5);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000363}}
   #date-bar #date-progress {
     position: absolute;
     height: 4em;
@@ -711,7 +754,7 @@
     background: #d13d27;
     width: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000372}}
   #date-bar h2 {
     float: left;
     width: 60%;
@@ -720,12 +763,12 @@
     z-index: 1;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000381}}
   .mix-time {
     float: right;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000385}}
   .date-date {
     display: none;
   }
@@ -924,11 +967,11 @@
 }
 @media only screen and (min-width: 52em) {
   /*832px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000393}}
   #date-bar h2 {
     text-align: center;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000397}}
   #date-bar .mix-time, #date-bar .date-date {
     position: relative;
     float: left;
@@ -936,7 +979,7 @@
     font-size: 0.9em;
     z-index: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\00003105}}
   #date-bar .date-date {
     display: block;
     float: right;

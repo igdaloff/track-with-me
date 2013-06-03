@@ -1,3 +1,42 @@
+/*TRACK DETAILS*/
+.track-details{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5em;
+	background: rgba(255,255,255,0.9);
+
+	li{
+		margin-bottom: 0.25em;
+	}
+
+	.album-name{
+		margin-bottom: 0;
+		font-style: italic;
+	}
+}
+
+.artist-name{
+	font-size: 1.1em;
+}
+
+.track-time{
+	position: absolute;
+	right: 0.5em;
+	bottom: 0.5em;
+}
+
+#track-progress{
+	position: absolute;
+	top: -0.25em;
+	left: 0;
+	width: 0;
+	height: 0.25em;
+	background: $red;
+}
+
+/*DATE TITLE, PROGRESS, TIME*/
 #date-bar{
 	position: relative;
 	width: 100%;

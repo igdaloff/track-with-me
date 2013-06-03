@@ -2,15 +2,15 @@ $(document).ready( function() {
 
 	var mixDuration = 100000;
 
-	$('#date-progress').animate({
+	$('#date-progress, #track-progress').animate({ //These will need to be separate when actually implemented
 	  width: '100%'
 	}, mixDuration, 'linear');
 
 	$('img.facebook-image').unveil(200);
 
-	/* 	Sorta bastardizing Unveil (http://luis-almeida.github.io/unveil/), 
-		but this will work for now.  Doesn't load image until you go into 
-		the add-friends modal.  This is ugly, i'd like to get regular unveil 
+	/* 	Sorta bastardizing Unveil (http://luis-almeida.github.io/unveil/),
+		but this will work for now.  Doesn't load image until you go into
+		the add-friends modal.  This is ugly, i'd like to get regular unveil
 		to work.
 
 		It seems that the modal makes something get weird here, so I'm forcing
@@ -28,11 +28,11 @@ $(document).ready( function() {
 		console.log("clicked create-date-button");
 		// TODO - validate that everything is good
 		var errorMessage = ''
-		
+
 
 		$('#date-form').submit();
 	});
 
-	
+
 });
 
