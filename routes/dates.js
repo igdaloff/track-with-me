@@ -7,12 +7,13 @@ var join = path.join;
 var mock = false;
 
 exports.list = function(req, res){
-	Date.find({}, function(err, dates){
+	Date.find({user: req.user.facebookId}, function(err, dates){
 		if (err) return next(err);
 
 		res.render('dates', {
-			title: 'Dates',
-			dates: dates
+			title: 'My Dates',
+			dates: dates,
+			isAuthenticated: req.isAuthenticated()
 		});
 	})
 }

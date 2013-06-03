@@ -9,11 +9,8 @@ var express = require('express')
   , path = require('path')
   , auth = require('./auth/routes')
   , passport = require('passport')
-  , facebook = require('./routes/facebook');
-
-
-// throwaway
-var spotify = require('./routes/spotify');
+  , facebook = require('./routes/facebook')
+  , spotify = require('./routes/spotify');
 
 var app = express();
 
@@ -57,7 +54,7 @@ app.get('/logout', function(req, res){
 });
 
 app.get('/', routes.index);
-app.get('/dates', ensureAuthenticated, dates.list);
+app.get('/my-dates', ensureAuthenticated, dates.list);
 app.get('/date', ensureAuthenticated, dates.date);
 app.get('/create', ensureAuthenticated, dates.form);
 app.post('/create', dates.submit);
