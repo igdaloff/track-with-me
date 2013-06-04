@@ -1,53 +1,54 @@
-.create-date{
+#create-date{
 	position: relative;
 	padding: 6em 0 4em;
+
+		.track-choices{
+		@include transition;
+		@include clearfix;
+
+		&:hover .add-track {
+			opacity: 1;
+		}
+
+		&:hover	li{
+			background: $white;
+			border: 1px dashed $grey;
+
+			img{
+				@include transition;
+				opacity: 0;
+			}
+		}
+
+		&:hover{
+
+			.track-choice-top{
+				-moz-transform: rotate(-7.5deg);
+				-ms-transform: rotate(-7.5deg);
+				-o-transform: rotate(-7.5deg);
+				-webkit-transform: rotate(-7.5deg);
+				transform: rotate(-7.5deg);
+				left:47.5%;
+				margin-top: -1.5em;
+			}
+
+			.track-choice-middle{
+				margin-top: -1.5em;
+			}
+
+			.track-choice-bottom{
+				-moz-transform: rotate(7.5deg);
+				-ms-transform: rotate(7.5deg);
+				-o-transform: rotate(7.5deg);
+				-webkit-transform: rotate(7.5deg);
+				transform: rotate(7.5deg);
+				left: 55%;
+				margin-top: -1.5em;
+			}
+		}
+	}
 }
 
-.track-choices{
-	@include transition;
-	@include clearfix;
-
-	&:hover .add-track {
-		opacity: 1;
-	}
-
-	&:hover	li{
-		background: $white;
-		border: 1px dashed $grey;
-
-		img{
-			@include transition;
-			opacity: 0;
-		}
-	}
-
-	&:hover{
-
-		.track-choice-top{
-			-moz-transform: rotate(-7.5deg);
-			-ms-transform: rotate(-7.5deg);
-			-o-transform: rotate(-7.5deg);
-			-webkit-transform: rotate(-7.5deg);
-			transform: rotate(-7.5deg);
-			left:47.5%;
-			margin-top: -1.5em;
-		}
-
-		.track-choice-middle{
-			margin-top: -1.5em;
-		}
-
-		.track-choice-bottom{
-			-moz-transform: rotate(7.5deg);
-			-ms-transform: rotate(7.5deg);
-			-o-transform: rotate(7.5deg);
-			-webkit-transform: rotate(7.5deg);
-			transform: rotate(7.5deg);
-			left: 55%;
-			margin-top: -1.5em;
-		}
-	}
-}
 
 .track-choice{
 	position: absolute;
