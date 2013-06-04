@@ -279,13 +279,17 @@
 	}
 }
 
-.search-track-name, .chosen-track-name{
+.search-track-name, .search-artist-name{
 	display: inline-block;
 	width: 50%;
 	margin-right: 2.5%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+}
+
+.search-artist-name{
+	width: 40%;
 }
 
 .search-track-play{
