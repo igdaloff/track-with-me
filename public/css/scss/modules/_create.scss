@@ -321,7 +321,7 @@
 	}
 }
 
-.play-track, .stop-track{
+.chosen-play-track, .chosen-stop-track{
 	opacity: 0;
 	position: absolute;
 	width: 2em;
@@ -336,10 +336,6 @@
 	border-radius: 100%;
 	@include transition;
 	-webkit-backface-visibility: hidden;
-}
-
-.play-track{
-	text-indent: 0.2em;
 }
 
 .remove-track{
