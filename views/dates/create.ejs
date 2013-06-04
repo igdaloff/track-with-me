@@ -51,17 +51,23 @@
 	<section class="modal-container" id="music-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 		<div class="modal-inner wrapper">
 			<div class="modal-content">
-				<div>
-					<h2>Select 3 Songs</h2>
-					<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
+				<h2>Select 3 Songs</h2>
+				<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
+
+				<ul id="chosen-tracks">
+					<li><img src="/images/tame-impala-cover-small.jpg" alt="Chosen track 1"><a href="" data-icon="p" class="play-track"></a><a href="" class="remove-track">×</a></li>
+					<li><img src="/images/krisskross-cover-small.jpg" alt="Chosen track 1"><a href="" data-icon="s" class="stop-track"></a><a href="" class="remove-track">×</a></li>
+					<li><img src="/images/weeknd-cover-small.jpg" alt="Chosen track 1"><a href="" data-icon="p" class="play-track"></a><a href="" class="remove-track">×</a></li>
+				</ul>
+
+				<div class="search-input-container">
 					<input id='spotify-search-term' type='text' placeholder='Search for music'>
-
 					<button id='spotify-search-button'>Search</button>
+				</div>
 
-					<p id="searching">Searching...</p>
+				<p id="searching">Searching...</p>
 
-					<div id='spotify-search-results'>
-					</div>
+				<div id='spotify-search-results'>
 				</div>
 			</div>
 		</div>

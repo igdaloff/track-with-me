@@ -56,7 +56,7 @@ html {
 }
 .modal-container .modal-inner {
   position: absolute;
-  top: 200px;
+  top: 15%;
   left: 50%;
   z-index: 20;
   margin-left: -40%;
@@ -69,10 +69,11 @@ html {
 
 .modal-container .modal-content {
   max-height: 400px;
-  padding: 3em 4em 4em;
+  padding: 2em;
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .modal-container .modal-content > * {
   max-width: 100%;
 }
@@ -96,7 +97,7 @@ html {
 .modal-container .modal-close:after {
   content: '×';
   position: absolute;
-	top: 185px;
+	top: 13%;
 	right: 8.7%;
   z-index: 20000;
   background: $red;

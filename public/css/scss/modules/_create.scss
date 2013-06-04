@@ -16,6 +16,7 @@
 		border: 1px dashed $grey;
 
 		img{
+			@include transition;
 			opacity: 0;
 		}
 	}
@@ -206,16 +207,22 @@
 
 /*CHOOSE MUSIC MODAL*/
 #music-search{
+	text-align: center;
 
 	p{
-		margin-bottom: 1em;
+		width: 80%;
+		margin: 0 auto 1em;
 	}
 
+	#searching{
+		margin-top: 2em;
+		font-family: 'LatoBold', helvetica, sans-serif;
+	}
 }
+
 #spotify-search-term{
-	float: left;
-	width: 25%;
-	margin-right: 0.5em;
+	width: 33.3333%;
+	margin-right: 0.25em;
 }
 
 #spotify-search-button{
@@ -226,36 +233,8 @@
 	}
 }
 
-#results-list{
-
-	li{
-		cursor: pointer;
-	}
-
-}
-
-#searching{
-	margin-top: 2em;
-	font-family: 'LatoBold', helvetica, sans-serif;
-}
-
-#results-list{
-	background: $light-grey;
-	border-left: 1px solid $grey;
-	border-right: 1px solid $grey;
-
-	li{
-		padding: 0.25em 0.5em;
-		border-bottom: 1px solid $grey;
-
-		&:last-child{
-			border-radius: 0 0 4px 4px;
-		}
-
-		&:nth-child(odd){
-			background: $white;
-		}
-	}
+#spotify-search-results{
+	text-align: left;
 }
 
 .search-results-title{
@@ -277,14 +256,102 @@
 }
 
 .search-name-header{
-	width: 27.5%;
+	width: 52.5%;
 }
 
-.search-track-name{
+#results-list{
+	background: $light-grey;
+	border-left: 1px solid $grey;
+	border-right: 1px solid $grey;
+
+	li{
+		padding: 0.25em 0.5em;
+		border-bottom: 1px solid $grey;
+		cursor: pointer;
+
+		&:last-child{
+			border-radius: 0 0 4px 4px;
+		}
+
+		&:nth-child(odd){
+			background: $white;
+		}
+	}
+}
+
+.search-track-name, .chosen-track-name{
 	display: inline-block;
-	width: 25%;
+	width: 50%;
 	margin-right: 2.5%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+}
+
+.search-track-play{
+	float: right;
+}
+
+#chosen-tracks{
+	display: inline-block;
+	width: 100%;
+	margin: 1em 0 2em;
+	text-align: center;
+
+	li{
+		display: inline-block;
+		width: 15%;
+		position: relative;
+		margin: 0 2.5%;
+		background: $grey;
+		border: 1px dashed $light-grey;
+		@include transition;
+
+		img{
+			display: block;
+			max-width: 100%;
+			border: 1px solid white;
+			margin: -1px;
+		}
+
+		&:hover .play-track,
+		&:hover .stop-track{
+			opacity: 1;
+		}
+	}
+}
+
+.play-track, .stop-track{
+	opacity: 0;
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	top: 50%;
+	left: 50%;
+	margin: -1em 0 0 -1em;
+	color: white;
+	line-height: 2.2;
+	font-size: 1.6em;
+	background: rgba(0,0,0,.6);
+	border-radius: 100%;
+	@include transition;
+	-webkit-backface-visibility: hidden;
+}
+
+.play-track{
+	text-indent: 0.2em;
+}
+
+.remove-track{
+	position: absolute;
+	right: -1em;
+	top: -1em;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.4;
+	background: $red;
+	color: $white;
+	border-radius: 100%;
+	text-align: center;
+	text-indent: -1px;
 }

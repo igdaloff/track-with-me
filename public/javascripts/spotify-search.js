@@ -49,10 +49,10 @@ $(document).ready(function(){
 			// tracks.forEach(function(track){
 			for (var i = 0; i < tracks.length; i++) {
 				track = tracks[i];
-				htmlString += "<li id='" + track.href + "'>" + "<span class='search-track-name'>" + track.name + "</span>" + "<span class='search-artist-name'>" + track.artists[0].name + "</span>" +"</li>";
+				htmlString += "<li id='" + track.href + "'><span class='search-track-name'>" + track.name + "</span><span class='search-artist-name'>" + track.artists[0].name + "</span><a class='search-track-play' href='' data-icon='p'></a></li>";
 			}
 
-			$('#spotify-search-results').append(htmlString + '</ul>').prepend("<h3 class='search-results-title' >Spotify search results for \"" + searchTerm + "\"</h3>" + "<div class='track-search-headers'><h4 class='search-name-header'>Track</h4><h4 class='search-artist-header'>Artist</h4></div>");
+			$('#spotify-search-results').append(htmlString + '</ul>').prepend("<h3 class='search-results-title' >Spotify search results for \"" + searchTerm + "\"</h3><div class='track-search-headers'><h4 class='search-name-header'>Track</h4><h4 class='search-artist-header'>Artist</h4></div>");
 		});
 	});
 });
