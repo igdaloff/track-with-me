@@ -1,6 +1,14 @@
 var spotify = require('spotify')
 var mock = false;
 
+/*
+var libspotify = require('libspotify');
+var session = new libspotify.Session({
+    applicationKey: __dirname + '/../auth/spotify_appkey.key'
+});
+
+session.login('', '');
+*/
 
 exports.ajaxSearchTracks = function(req, res, next){
 	console.log("in spotify search submit");
@@ -23,7 +31,16 @@ exports.ajaxSearchTracks = function(req, res, next){
 		res.json(mockData)
 	
 	} else {
-
+	
+		/*
+		var search = libspotify.Search('track:' + searchKeyword);
+		search.trackCount = 25;
+		search.execute();
+		search.once('ready', function(){
+			res.json(search.tracks)
+		})
+		*/
+		
 		spotify.search({ type: 'track', query: searchKeyword }, function(err, data) {
 
 			if(err) return next(err);
@@ -31,6 +48,7 @@ exports.ajaxSearchTracks = function(req, res, next){
 			res.json(data);
 			
 		});	
+		
 	}
 }
 
