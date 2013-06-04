@@ -9,6 +9,18 @@
 			<img class="friend-user-image" src="https://graph.facebook.com/<%= date.friend %>/picture?type=large" alt="Friend Profile image">
 		</div>
 	</div>
+	
+	<% 	var track1uriParts = date.song1.split(':');
+		var track1uri = track1uriParts[track1uriParts.length - 1];
+		
+		var track2uriParts = date.song2.split(':');
+		var track2uri = track2uriParts[track2uriParts.length - 1];
+		
+		var track3uriParts = date.song3.split(':');
+		var track3uri = track3uriParts[track3uriParts.length - 1];
+	%>
+	
+	<iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:<%= track1uri + ',' + track2uri + ',' + track3uri %>" frameborder="0" allowtransparency="true"></iframe>
 
 	<!-- TODO - currently is not dynamic -->
 	<ul class="track-choices">
