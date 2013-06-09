@@ -2,20 +2,20 @@
 <% stylesheet('/css/generated/styles.css') -%>
 <% script('/javascripts/date.js') -%>
 
-<div class="create-date">
+<div id="date">
 	<div class="user-images wrapper">
 		<img class="self-user-image" src="/images/jon-profile.jpg" alt="User Profile image">
 		<div class="friend-user-image-outer">
 			<img class="friend-user-image" src="https://graph.facebook.com/<%= date.friend %>/picture?type=large" alt="Friend Profile image">
 		</div>
 	</div>
-	
+
 	<% 	var track1uriParts = date.song1.split(':');
 		var track1uri = track1uriParts[track1uriParts.length - 1];
-		
+
 		var track2uriParts = date.song2.split(':');
 		var track2uri = track2uriParts[track2uriParts.length - 1];
-		
+
 		var track3uriParts = date.song3.split(':');
 		var track3uri = track3uriParts[track3uriParts.length - 1];
 	%>
