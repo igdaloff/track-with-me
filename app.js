@@ -57,6 +57,7 @@ app.get('/', routes.index);
 app.get('/my-dates', ensureAuthenticated, dates.list);
 app.get('/date', ensureAuthenticated, dates.date);
 app.get('/create', ensureAuthenticated, dates.form);
+app.get('/cold', dates.cold);
 app.post('/create', dates.submit);
 
 app.get('/searchSpotify', spotify.search);

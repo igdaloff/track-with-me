@@ -92,6 +92,13 @@ exports.form = function(req, res){
 	}
 }
 
+exports.cold = function(req, res, next) {
+	res.render('dates/cold', {
+		title: 'Date',
+		isAuthenticated: req.isAuthenticated()
+	});
+}
+
 exports.date = function (req, res, next) {
 	
 	console.log("req.query.id: " + req.query.id);
