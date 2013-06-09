@@ -55,20 +55,6 @@ h2{
 	opacity: 0.5;
 }
 
-.close-button{
-	position: absolute;
-	right: -1em;
-	top: -1em;
-	width: 1.5em;
-	height: 1.5em;
-	line-height: 1.4;
-	background: $red;
-	color: $white;
-	border-radius: 100%;
-	text-align: center;
-	text-indent: -1px;
-}
-
 /*Form Elements*/
 .button, button{
 	display: inline-block;
@@ -86,6 +72,20 @@ h2{
 	&:hover{
 		@include box-shadow(0, 1px, 3px, rgba(0,0,0,.35));
 	}
+}
+
+.close-button{
+	position: absolute;
+	right: -1em;
+	top: -1em;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5;
+	background: $red;
+	color: $white;
+	border-radius: 100%;
+	text-align: center;
+	text-indent: -1px;
 }
 
 input, .input{

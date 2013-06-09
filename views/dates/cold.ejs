@@ -5,10 +5,39 @@
 <% script('/javascripts/facebook-search.js') -%>
 <% script('/javascripts/date.js') -%>
 
-
 <!-- TODO - No way to actually create date right now -->
-<div id="create-date">
-	<div class="user-images wrapper">
+<div class="create-date cold-start">
+
+	<div class="track-choices-cold track-choices">
+		<ul>
+			<li class="track-choice-bottom track-choice">
+				<img src="/images/weeknd-cover-small.jpg" alt="Album Cover 3">
+			</li>
+			<li class="track-choice-middle track-choice">
+				<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
+			</li>
+			<li class="track-choice-top track-choice">
+				<a href="#music-search" class="add-track call-modal" title="Clicking this link will allow you to search and add music to your mix.">
+					<h3>Click to make your first mix</h3>
+				</a>
+				<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
+			</li>
+		</ul>
+
+<!--
+		<a href="#music-search" class="choose-track-cold">
+			<span class="button">Click to create your first mix</span>
+		</a>
+-->
+
+	</div>
+
+	<div class="choose-track-tooltip">
+		<p>Click above to create your first mix!</p>
+		<a class="close-button">×</a>
+	</div>
+
+	<div class="user-images wrapper inactive">
 		<img class="self-user-image" src="/images/jon-profile.jpg" alt="User Profile image">
 		<div class="friend-user-image-outer">
 			<img class="friend-user-image" src="/images/erica-profile.jpg" alt="Friend Profile image">
@@ -18,20 +47,6 @@
 			<p id="friend-name"></p>
 		</div>
 	</div>
-	<ul class="track-choices">
-		<li class="track-choice-bottom track-choice">
-			<img src="/images/weeknd-cover-small.jpg" alt="Album Cover 3">
-		</li>
-		<li class="track-choice-middle track-choice">
-			<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
-		</li>
-		<li class="track-choice-top track-choice">
-			<a href="#music-search" class="add-track call-modal" title="Clicking this link will allow you to search and add music to your mix.">
-				<h3>Click to add songs to your mix</h3>
-			</a>
-			<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
-		</li>
-	</ul>
 
 	<!-- Hidden form to submit shit once it's done -->
 	<form id='date-form' method='post' action='/create'>
@@ -42,7 +57,7 @@
 		<input type='hidden' id='date-song2' name='date[song2]'>
 		<input type='hidden' id='date-song3' name='date[song3]'>
 
-		<div class="create-date-button">
+		<div class="create-date-button inactive">
 			<a href="" class="button">Schedule Date</a>
 		</div>
 	</form>
@@ -101,7 +116,7 @@
 					<div>
 						<ul id='facebook-search-results'>
 							<!-- TODO ask them to join to look up friends -->
-							
+
 						</ul>
 					</div>
 				</div>
@@ -110,5 +125,3 @@
 		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
 	</section>
 </div>
-
-

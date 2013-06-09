@@ -7,8 +7,26 @@
 
 
 <!-- TODO - No way to actually create date right now -->
-<div id="create-date">
-	<div class="user-images wrapper">
+<div class="create-date">
+
+	<div class="track-choices-hot track-choices">
+		<ul>
+			<li class="track-choice-bottom track-choice">
+				<img src="/images/weeknd-cover-small.jpg" alt="Album Cover 3">
+			</li>
+			<li class="track-choice-middle track-choice">
+				<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
+			</li>
+			<li class="track-choice-top track-choice">
+				<a href="#music-search" class="add-track call-modal" title="Clicking this link will allow you to search and add music to your mix.">
+					<h3>Click to add songs to your mix</h3>
+				</a>
+				<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
+			</li>
+		</ul>
+	</div>
+
+	<div class="user-images user-images-hot wrapper">
 		<img class="self-user-image" src="/images/jon-profile.jpg" alt="User Profile image">
 		<div class="friend-user-image-outer">
 			<img class="friend-user-image" src="/images/erica-profile.jpg" alt="Friend Profile image">
@@ -18,20 +36,6 @@
 			<p id="friend-name"></p>
 		</div>
 	</div>
-	<ul class="track-choices">
-		<li class="track-choice-bottom track-choice">
-			<img src="/images/weeknd-cover-small.jpg" alt="Album Cover 3">
-		</li>
-		<li class="track-choice-middle track-choice">
-			<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
-		</li>
-		<li class="track-choice-top track-choice">
-			<a href="#music-search" class="add-track call-modal" title="Clicking this link will allow you to search and add music to your mix.">
-				<h3>Click to add songs to your mix</h3>
-			</a>
-			<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
-		</li>
-	</ul>
 
 	<!-- Hidden form to submit shit once it's done -->
 	<form id='date-form' method='post' action='/create'>
