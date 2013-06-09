@@ -7,7 +7,14 @@ var join = path.join;
 var mock = false;
 
 exports.list = function(req, res){
-	Date.find({user: req.user.facebookId}, function(err, dates){
+	Date.find({
+		
+		$or:[
+        		{ user: req.user.facebookId },
+				{ friend: req.user.facebookId }
+			]
+		
+	}, function(err, dates){
 		if (err) return next(err);
 
 		res.render('dates', {
@@ -85,6 +92,7 @@ exports.form = function(req, res){
 			});
 
 			res.render('dates/create', {
+				currentUserImage: req.user.picture,
 				friends: friendsArray,
 				isAuthenticated: req.isAuthenticated()
 			});
