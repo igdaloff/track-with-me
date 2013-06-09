@@ -10,24 +10,29 @@ var express = require('express')
   , auth = require('./auth/routes')
   , passport = require('passport')
   , facebook = require('./routes/facebook')
-  , spotify = require('./routes/spotify');
+  , spotify = require('./routes/spotify')
+  , io = require('socket.io');
 
 var app = express();
+var server = app.listen(3000);
+var io = require('socket.io').listen(server);
 
-app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.engine('ejs', engine);
-app.set('view engine', 'ejs');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.cookieParser());
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(express.cookieSession({ secret: 'S0nJ0l0ve!', maxAge: 360*5 }));
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+app.configure(function(){
+	
+	app.set('views', __dirname + '/views');
+	app.engine('ejs', engine);
+	app.set('view engine', 'ejs');
+	app.use(express.favicon());
+	app.use(express.logger('dev'));
+	app.use(express.cookieParser());
+	app.use(express.bodyParser());
+	app.use(express.methodOverride());
+	app.use(express.cookieSession({ secret: 'S0nJ0l0ve!', maxAge: 360*5 }));
+	app.use(passport.initialize());
+	app.use(passport.session());
+	app.use(app.router);
+	app.use(express.static(path.join(__dirname, 'public')));	
+});
 
 // development only
 if ('development' == app.get('env')) {
@@ -66,9 +71,7 @@ app.get('/searchFacebook', facebook.search);
 // for ajax searching
 app.get('/spotifySearch', spotify.ajaxSearchTracks);
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
+console.log('Express server listening on port 3000');
 
 // Simple route middleware to ensure user is authenticated.
 //   Use this route middleware on any resource that needs to be protected.  If
