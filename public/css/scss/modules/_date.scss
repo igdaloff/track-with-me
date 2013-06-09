@@ -52,6 +52,11 @@
 	line-height: 4em;
 	@include clearfix;
 
+	.wrapper{
+		position: absolute;
+		left: 10%;
+	}
+
 	&:before{
 		position: absolute;
 		content: '';
@@ -76,10 +81,13 @@
 
 	h2{
 		float: left;
-		width: 60%;
+		width: 75%;
 		margin: 0;
 		position: relative;
 		z-index: 1;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 }
 
@@ -96,6 +104,7 @@ and (min-width : 52em) { /*832px*/
 	#date-bar{
 
 		h2{
+			width: 60%;
 			text-align: center;
 		}
 
@@ -108,10 +117,9 @@ and (min-width : 52em) { /*832px*/
 		}
 
 		.date-date{
-			display: block;
+			display: inline-block;
 			float: right;
 			text-align: right;
-			float: right;
 		}
 
 	}

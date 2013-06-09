@@ -1,10 +1,12 @@
 $(document).ready( function() {
 
+/*
 	var mixDuration = 100000;
 
 	$('#date-progress, #track-progress').animate({ //These will need to be separate when actually implemented
 	  width: '100%'
 	}, mixDuration, 'linear');
+*/
 
 	$('img.facebook-image').unveil(200);
 
