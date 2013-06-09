@@ -1,0 +1,114 @@
+<% layout('/boilerplate') -%>
+<% stylesheet('/css/generated/styles.css') -%>
+<% script('/javascripts/unveil-min.js') -%>
+<% script('/javascripts/spotify-search.js') -%>
+<% script('/javascripts/facebook-search.js') -%>
+<% script('/javascripts/date.js') -%>
+
+
+<!-- TODO - No way to actually create date right now -->
+<div id="create-date">
+	<div class="user-images wrapper">
+		<img class="self-user-image" src="/images/jon-profile.jpg" alt="User Profile image">
+		<div class="friend-user-image-outer">
+			<img class="friend-user-image" src="/images/erica-profile.jpg" alt="Friend Profile image">
+			<a href="#friend-search" class="add-friend" title="Clicking this link will allow you to choose a friend to share your mix with.">
+				<h3>Click to add a&nbsp;friend</h3>
+			</a>
+			<p id="friend-name"></p>
+		</div>
+	</div>
+	<ul class="track-choices">
+		<li class="track-choice-bottom track-choice">
+			<img src="/images/weeknd-cover-small.jpg" alt="Album Cover 3">
+		</li>
+		<li class="track-choice-middle track-choice">
+			<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
+		</li>
+		<li class="track-choice-top track-choice">
+			<a href="#music-search" class="add-track call-modal" title="Clicking this link will allow you to search and add music to your mix.">
+				<h3>Click to add songs to your mix</h3>
+			</a>
+			<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
+		</li>
+	</ul>
+
+	<!-- Hidden form to submit shit once it's done -->
+	<form id='date-form' method='post' action='/create'>
+		<input type='hidden' id='date-name' name='date[name]'>
+		<input type='hidden' id="date-friend" name='date[friend]'>
+		<input type='hidden' id='date-date' name='date[date]' >
+		<input type='hidden' id='date-song1' name='date[song1]'>
+		<input type='hidden' id='date-song2' name='date[song2]'>
+		<input type='hidden' id='date-song3' name='date[song3]'>
+
+		<div class="create-date-button">
+			<a href="" class="button">Schedule Date</a>
+		</div>
+	</form>
+
+	<!-- Modal for Spotify track search -->
+	<section class="modal-container" id="music-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-inner wrapper">
+			<div class="modal-content">
+				<h2>Select 3 Songs</h2>
+				<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
+
+				<ul id="chosen-tracks">
+					<li>
+						<img src="/images/tame-impala-cover-small.jpg" alt="Chosen track 1">
+						<a href="#" data-icon="p" class="play-track chosen-play-track"></a>
+						<span class="screen-reader-text">Click to toggle track between play and stop</span>
+						<a href="" class="remove-track">×</a>
+					</li>
+					<li>
+						<img src="/images/krisskross-cover-small.jpg" alt="Chosen track 1">
+						<a href="#"  data-icon="p" class="play-track chosen-play-track"></a>
+						<span class="screen-reader-text">Click to toggle track between play and stop</span>
+						<a href="" class="remove-track">×</a>
+					</li>
+					<li>
+						<img src="/images/weeknd-cover-small.jpg" alt="Chosen track 1">
+						<a href="#"  data-icon="p" class="play-track chosen-play-track"></a>
+						<span class="screen-reader-text">Click to toggle track between play and stop</span>
+						<a href="" class="remove-track">×</a>
+					</li>
+				</ul>
+
+				<div class="search-input-container">
+					<input id='spotify-search-term' type='text' placeholder='Search for music'>
+					<button id='spotify-search-button'>Search</button>
+				</div>
+
+				<p id="searching">Searching...</p>
+
+				<div id='spotify-search-results'>
+				</div>
+			</div>
+		</div>
+		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
+	</section>
+
+	<!-- Modal for Facebook friend search -->
+	<section class="modal-container" id="friend-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-inner wrapper">
+			<div class="modal-content">
+				<div>
+					<input id='facebook-search-box' type='text' placeholder='Search Term'>
+
+					<button id='facebook-search-button'>Search Friends</button>
+
+					<div>
+						<ul id='facebook-search-results'>
+							<!-- TODO ask them to join to look up friends -->
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
+	</section>
+</div>
+
+
