@@ -1,3 +1,18 @@
+/* Colors */
+$red				:		#d13d27;
+$white			:		#fff;
+$light-grey	: 	#f3f3f3;
+$grey				:		#838384;
+$black			:		#222;
+
+/*Typography*/
+$sans-serif: 'LatoLight', helvetica, sans-serif;
+
+h2{
+	font-size: 1.8em;
+	margin-bottom: 0.25em;
+}
+
 /* Layout */
 .wrapper{
 	position: relative;
@@ -36,19 +51,22 @@
 	}
 }
 
-/* Colors */
-$red				:		#d13d27;
-$white			:		#fff;
-$light-grey	: 	#f3f3f3;
-$grey				:		#838384;
-$black			:		#222;
+.inactive{
+	opacity: 0.5;
+}
 
-/*Typography*/
-$sans-serif: 'LatoLight', helvetica, sans-serif;
-
-h2{
-	font-size: 1.8em;
-	margin-bottom: 0.25em;
+.close-button{
+	position: absolute;
+	right: -1em;
+	top: -1em;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.4;
+	background: $red;
+	color: $white;
+	border-radius: 100%;
+	text-align: center;
+	text-indent: -1px;
 }
 
 /*Form Elements*/

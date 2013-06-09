@@ -116,6 +116,21 @@
 	}
 }
 
+.choose-track-tooltip{
+	position: absolute;
+	right: 10%;
+	top: 4em;
+	background: white;
+	border-radius: 4px;
+	border: 1px solid $red;
+	padding: 2em;
+	z-index: 2;
+	@include box-shadow(0, 0, 20px, 5px, rgba(0, 0, 0, 0.25));
+}
+
+.close-tooltip{
+}
+
 /*User Images*/
 .user-images{
 	max-width:820px;
@@ -341,18 +356,4 @@
 	border-radius: 100%;
 	@include transition;
 	-webkit-backface-visibility: hidden;
-}
-
-.remove-track{
-	position: absolute;
-	right: -1em;
-	top: -1em;
-	width: 1.5em;
-	height: 1.5em;
-	line-height: 1.4;
-	background: $red;
-	color: $white;
-	border-radius: 100%;
-	text-align: center;
-	text-indent: -1px;
 }
