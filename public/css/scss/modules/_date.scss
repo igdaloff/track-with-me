@@ -1,3 +1,7 @@
+#date{
+	padding: 6em 0 4em;
+}
+
 /*TRACK DETAILS*/
 .track-details{
 	position: absolute;
@@ -6,6 +10,7 @@
 	width: 100%;
 	padding: 0.5em;
 	background: rgba(255,255,255,0.9);
+	@include box-sizing;
 
 	li{
 		margin-bottom: 0.25em;

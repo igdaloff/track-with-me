@@ -12,6 +12,12 @@
 	}
 }
 
+.track-choices-cold{
+
+	&:after{
+		height: 0;
+	}
+}
 .choose-track-cold{
 	display: block;
 	position: relative;

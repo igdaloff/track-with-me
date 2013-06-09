@@ -11,9 +11,30 @@
 	margin: 0 auto;
 }
 
-/* .track-choices-hot{ */
 .track-choices{
 	@include transition;
+
+	&:after{
+		width: 200%;
+		position: absolute;
+		left: -50%;
+		top: 11em;
+		height: 1px;
+		background: $grey;
+		content: '';
+		z-index: 0;
+	}
+}
+
+.track-choices-create{
+
+	.track-choice-bottom:hover{
+		z-index: 2;
+	}
+
+	.track-choice-middle:hover{
+		z-index: 2;
+	}
 
 	&:hover .add-track {
 		opacity: 1;
@@ -48,28 +69,6 @@
 			transform: rotate(7.5deg);
 			left: 55%;
 		}
-	}
-}
-
-.track-choices-hot{
-
-	&:after{
-		width: 200%;
-		position: absolute;
-		left: -50%;
-		top: 11em;
-		height: 1px;
-		background: $grey;
-		content: '';
-		z-index: 0;
-	}
-
-	.track-choice-bottom:hover{
-		z-index: 2;
-	}
-
-	.track-choice-middle:hover{
-		z-index: 2;
 	}
 }
 

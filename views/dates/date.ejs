@@ -3,13 +3,6 @@
 <% script('/javascripts/date.js') -%>
 
 <div id="date">
-	<div class="user-images wrapper">
-		<img class="self-user-image" src="https://graph.facebook.com/<%= date.user %>/picture?type=large" alt="User Profile image">
-		<div class="friend-user-image-outer">
-			<img class="friend-user-image" src="https://graph.facebook.com/<%= date.friend %>/picture?type=large" alt="Friend Profile image">
-		</div>
-	</div>
-
 	<% 	var track1uriParts = date.song1.split(':');
 		var track1uri = track1uriParts[track1uriParts.length - 1];
 
@@ -19,30 +12,42 @@
 		var track3uriParts = date.song3.split(':');
 		var track3uri = track3uriParts[track3uriParts.length - 1];
 	%>
-	
+
 	<iframe src="https://embed.spotify.com/?uri=spotify:trackset:<%= date.title %>:<%= track1uri + ',' + track2uri + ',' + track3uri %>&view=coverart" width="640" height="720" frameborder="0" allowtransparency="true" style="display: none;"></iframe>
 
 	<!-- TODO - currently is not dynamic -->
-	<ul class="track-choices">
-		<li class="track-choice-bottom track-choice">
-			<img src="/images/weeknd-cover-small.jpg" alt="Album Cover 3">
-		</li>
-		<li class="track-choice-middle track-choice">
-			<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
-		</li>
-		<li class="track-choice-top track-choice">
-			<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
-			<div class="track-details">
-				<div id="track-progress"></div>
-				<ul>
-					<li class="artist-name">Artist Name</li>
-					<li class="track-name">Track Name</li>
-					<li class="album-name">Album Name</li>
-				</ul>
-				<span class="track-time">0:43 / 4:52</span>
-			</div>
-		</li>
-	</ul>
+	<div class="track-choices track-choices-date">
+		<ul>
+			<li class="track-choice-bottom track-choice">
+				<img src="/images/weeknd-cover-small.jpg" alt="Album Cover 3">
+			</li>
+			<li class="track-choice-middle track-choice">
+				<img src="/images/krisskross-cover-small.jpg" alt="Album Cover 2">
+			</li>
+			<li class="track-choice-top track-choice">
+				<img src="/images/tame-impala-cover-small.jpg" alt="Album Cover 1">
+				<div class="track-details">
+					<div id="track-progress"></div>
+					<ul>
+						<li class="artist-name">Artist Name</li>
+						<li class="track-name">Track Name</li>
+						<li class="album-name">Album Name</li>
+					</ul>
+					<span class="track-time">0:43 / 4:52</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="user-images user-images-hot wrapper">
+		<div class="self-user-image-outer">
+			<img class="self-user-image" src="https://graph.facebook.com/<%= date.user %>/picture?type=large" alt="User Profile image">
+		</div>
+		<div class="friend-user-image-outer">
+			<img class="friend-user-image" src="https://graph.facebook.com/<%= date.friend %>/picture?type=large" alt="Friend Profile image">
+		</div>
+	</div>
+
 
 	<!-- DATE TITLE / PROGRESS -->
 	<div id="date-bar">
