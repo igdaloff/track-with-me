@@ -13,9 +13,8 @@
 
 	.date-item{
 		width: 100%;
-		padding: 0 1em;
-		height: 4em;
-		line-height: 3.9em;
+		padding: 1em 0.5em;
+		text-align: center;
 		border-bottom: 1px solid $dark-grey;
 		@include transition;
 		@include box-sizing;
@@ -37,13 +36,13 @@
 	}
 
 	h3{
-		float: left;
-		margin-right: 1em;
+		margin-bottom: 0.5em;
 	}
 
 	.date-item-date, .date-item-title{
-		float: left;
-		margin-right: 1em;
+		width: 100%;
+		display: inline-block;
+		margin-bottom: 0.5em;
 		color: $dark-grey;
 	}
 
@@ -52,12 +51,38 @@
 	}
 
 	.button{
-		float: right;
-		margin-top: 0.95em;
 		background: $red;
 
 		&:hover{
 			background: lighten($red, 5%);
+		}
+	}
+}
+
+@media screen and (min-width: 37.5em) { /*600px*/
+
+	.date-list{
+
+		.date-item{
+			padding: 0 1em;
+			height: 4em;
+			line-height: 3.9em;
+
+			h3{
+				float: left;
+				margin: 0 1em 0 0;
+			}
+
+			.date-item-date, .date-item-title{
+				float: left;
+				width: auto;
+				margin: 0 1em 0 0;
+			}
+		}
+
+		.button{
+			float: right;
+			margin-top: 0.95em;
 		}
 	}
 }
