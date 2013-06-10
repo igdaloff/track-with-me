@@ -2,8 +2,10 @@
 $red				:		#d13d27;
 $white			:		#fff;
 $light-grey	: 	#f3f3f3;
-$grey				:		#838384;
+$grey				:		#ccc;
+$dark-grey	:		#838384;
 $black			:		#222;
+$blue				:		#4450a4;
 
 /*Typography*/
 $sans-serif: 'LatoLight', helvetica, sans-serif;
@@ -89,7 +91,7 @@ h2{
 }
 
 input, .input{
-	border: 1px solid $grey;
+	border: 1px solid $dark-grey;
 	border-radius: 4px;
 	height: 2.5em;
 	padding-left: 0.5em;

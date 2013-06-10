@@ -72,6 +72,19 @@ html {
   padding: 2em;
   overflow-x: hidden;
   overflow-y: auto;
+
+  p{
+		width: 80%;
+		margin: 0 auto 1em;
+	}
+
+	button, .button{
+		background: $red;
+
+		&:hover{
+			background: lighten($red, 2%);
+		}
+	}
 }
 
 .modal-container .modal-content > * {

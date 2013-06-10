@@ -5,7 +5,7 @@ header{
 	width: 100%;
 	padding: 1em 0 0.5em;
 	@include box-shadow(0, 2px, 10px, rgba(0,0,0,0.15));
-	border-bottom: 1px solid $grey;
+	border-bottom: 1px solid $dark-grey;
 	background: $white;
 	z-index: 1000;
 	transition: 0.6s top ease-in-out;
@@ -60,17 +60,17 @@ nav{
 	right: 10%;
 	padding: 1em;
 	border-radius: 0 0 4px 4px;
-	border: 1px solid $grey;
+	border: 1px solid $dark-grey;
 	border-top: none;
 
 	.login-button{
 		position: relative;
-		background: #4450a4;
+		background: $blue;
 		text-indent: 2em;
 		-webkit-backface-visibility: hidden;
 
 		&:hover{
-			background: lighten(#4450a4, 5%);
+			background: lighten($blue, 5%);
 		}
 
 		&:before{

@@ -99,21 +99,18 @@
 	<section class="modal-container" id="friend-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 		<div class="modal-inner wrapper">
 			<div class="modal-content">
-				<div>
-					<input id='facebook-search-box' type='text' placeholder='Search Term'>
-
-					<button id='facebook-search-button'>Search Friends</button>
-
-					<div>
-						<ul id='facebook-search-results'>
-							<% friends.forEach( function(friend){ %>
-								<li id='<%= friend.id %> <%= friend.username %>' class='facebook-friend-item'>
-									<img class='facebook-image' src='' data-src='<%= friend.picture.data.url %>' /><%= friend.name %>
-								</li>
-							<% }) %>
-						</ul>
-					</div>
-				</div>
+				<h2>Choose a Friend</h2>
+				<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
+				<input id='facebook-search-box' type='text' placeholder='Search Your Friends'>
+				<button id='facebook-search-button'>Search Friends</button>
+				<ul id='facebook-search-results'>
+					<% friends.forEach( function(friend){ %>
+						<li id='<%= friend.id %> <%= friend.username %>' class='facebook-friend-item'>
+							<img class='facebook-image' src='' data-src='<%= friend.picture.data.url %>' />
+							<span><%= friend.name %></span>
+						</li>
+					<% }) %>
+				</ul>
 			</div>
 		</div>
 		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
