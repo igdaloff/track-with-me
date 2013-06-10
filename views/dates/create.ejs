@@ -39,20 +39,6 @@
 		</div>
 	</div>
 
-	<!-- Hidden form to submit shit once it's done -->
-	<form id='date-form' method='post' action='/create'>
-		<input type='hidden' id='date-name' name='date[name]'>
-		<input type='hidden' id="date-friend" name='date[friend]'>
-		<input type='hidden' id='date-date' name='date[date]' >
-		<input type='hidden' id='date-song1' name='date[song1]'>
-		<input type='hidden' id='date-song2' name='date[song2]'>
-		<input type='hidden' id='date-song3' name='date[song3]'>
-
-		<div class="create-date-button">
-			<a href="" class="button">Schedule Date</a>
-		</div>
-	</form>
-
 	<!-- Modal for Spotify track search -->
 	<section class="modal-container" id="music-search" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 		<div class="modal-inner wrapper">
@@ -115,6 +101,35 @@
 		</div>
 		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
 	</section>
+
+	<section class="modal-container" id="schedule-date" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-inner wrapper">
+			<div class="modal-content">
+				<h2>Schedule Your Date</h2>
+				<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
+
+				<!-- Hidden form to submit shit once it's done -->
+				<form id='date-form' method='post' action='/create'>
+					<input type='hidden' id='date-name' name='date[name]'>
+					<input type='hidden' id="date-friend" name='date[friend]'>
+					<input type='hidden' id='date-date' name='date[date]' >
+					<input type='hidden' id='date-song1' name='date[song1]'>
+					<input type='hidden' id='date-song2' name='date[song2]'>
+					<input type='hidden' id='date-song3' name='date[song3]'>
+
+					<div class="create-date-button">
+						<a href="" class="button">Schedule Date</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
+	</section>
+
+	<div class="schedule-date-button">
+		<a href="#schedule-date" class="button">Schedule Date</a>
+	</div>
+
 </div>
 
 

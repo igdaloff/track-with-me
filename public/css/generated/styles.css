@@ -706,17 +706,17 @@
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003202}}
-  .create-date-button {
+  .schedule-date-button {
     display: block;
     margin-top: 5em;
     text-align: center;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003207}}
-  .create-date-button .button {
+  .schedule-date-button .button {
     background: rgba(0, 0, 0, 0.5);
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003210}}
-  .create-date-button .button:hover {
+  .schedule-date-button .button:hover {
     background: #d13d27;
   }
 
