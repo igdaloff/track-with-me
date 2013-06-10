@@ -144,6 +144,10 @@
 	z-index: 2;
 	@include box-sizing;
 	overflow: hidden;
+
+	img{
+		min-height: 8em;
+	}
 }
 
 .self-user-image-outer{

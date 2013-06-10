@@ -1,19 +1,24 @@
 <% layout('/boilerplate') -%>
 <% stylesheet('/css/generated/styles.css') -%>
-<h1>Dates</h1>
-<p>Here are all the dates.</p>
-<div id="dates">
-	<% dates.forEach(function(date) { %>
-	<div class="date">
-		<h2><%= date.title %></h2>
-		<p>With: <%= date.friend %></p>
-		<p>On: <%= date.date %></p>
-		<ul>
-			<li><%= date.song1 %></li>
-			<li><%= date.song2 %></li>
-			<li><%= date.song3 %></li>
-		</ul>
-		<a href="/date?id=<%= date._id %>">View</a>
-	</div>
-	<% 	}) %>
+
+<div id="dates" class="wrapper">
+	<h2>Upcoming Dates</h2>
+	<ul class="date-list">
+		<% dates.forEach(function(date) { %>
+		<li class="date-item">
+			<a href="/date?id=<%= date._id %>">
+				<h3 class="date-item-friend">Jon Solove</h3>
+				<span class="date-item-date">Dec. 20, 2013, 5:00 pm</span>
+				<span class="date-item-title">Stanky Ass Stank Mix</span>
+
+		<!-- Uncomment and delete above when this dynamic data is acting right
+				<h3 class="date-item-friend"><%= date.friend %></h3>
+				<span class="date-item-date"><%= date.date %></span>
+				<span class="date-item-title">"<%= date.title %>"</span>
+		-->
+				<span class="button">View</span>
+			</a>
+		</li>
+		<% 	}) %>
+	</ul>
 </div>

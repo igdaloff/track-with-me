@@ -1,0 +1,63 @@
+#dates{
+	margin-top: 2em;
+
+	h2{
+		margin-bottom: 0.6em;
+	}
+}
+
+.date-list{
+	margin-bottom: 8em;
+	border: 1px solid $dark-grey;
+	border-radius: 4px;
+
+	.date-item{
+		width: 100%;
+		padding: 0 1em;
+		height: 4em;
+		line-height: 3.9em;
+		border-bottom: 1px solid $dark-grey;
+		@include transition;
+		@include box-sizing;
+		cursor: pointer;
+		background: $white;
+
+		&:hover{
+			background: $light-grey;
+		}
+
+		&:first-child{
+			border-radius: 4px 4px 0 0;
+		}
+
+		&:last-child{
+			border: none;
+			border-radius: 0 0 4px 4px;
+		}
+	}
+
+	h3{
+		float: left;
+		margin-right: 1em;
+	}
+
+	.date-item-date, .date-item-title{
+		float: left;
+		margin-right: 1em;
+		color: $dark-grey;
+	}
+
+	.date-item-title{
+		font-family: 'LatoLightItalic', helvetica, sans-serif;
+	}
+
+	.button{
+		float: right;
+		margin-top: 0.95em;
+		background: $red;
+
+		&:hover{
+			background: lighten($red, 5%);
+		}
+	}
+}

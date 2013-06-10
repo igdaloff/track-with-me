@@ -15,6 +15,10 @@ h2{
 	margin-bottom: 0.25em;
 }
 
+h3{
+	font-family: 'LatoRegular', helvetica, sans-serif;
+}
+
 /* Layout */
 .wrapper{
 	position: relative;
@@ -82,7 +86,7 @@ h2{
 	top: -1em;
 	width: 1.5em;
 	height: 1.5em;
-	line-height: 1.5;
+	line-height: 1.4;
 	background: $red;
 	color: $white;
 	border-radius: 100%;

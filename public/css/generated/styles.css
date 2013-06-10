@@ -187,8 +187,13 @@
     margin-bottom: 0.25em;
   }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000318}}
+  h3 {
+    font-family: 'LatoRegular', helvetica, sans-serif;
+  }
+
   /* Layout */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000323}}
   .wrapper {
     position: relative;
     width: 80%;
@@ -196,7 +201,7 @@
     max-width: 1200px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000330}}
   .album-bg {
     position: fixed;
     z-index: -1;
@@ -205,7 +210,7 @@
     top: -50%;
     left: -50%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000338}}
   .album-bg img {
     position: absolute;
     min-width: 50%;
@@ -216,7 +221,7 @@
     bottom: 0;
     margin: auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000349}}
   .album-bg:after {
     position: absolute;
     background: url(/images/dot-pattern.png);
@@ -227,13 +232,13 @@
     opacity: 0.4;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000360}}
   .inactive {
     opacity: 0.5;
   }
 
   /*Form Elements*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000365}}
   .button, button {
     display: inline-block;
     height: 2.5em;
@@ -251,20 +256,20 @@
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000378}}
   .button:hover, button:hover {
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35) ;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35) ;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000383}}
   .close-button {
     position: absolute;
     right: -1em;
     top: -1em;
     width: 1.5em;
     height: 1.5em;
-    line-height: 1.5;
+    line-height: 1.4;
     background: #d13d27;
     color: white;
     border-radius: 100%;
@@ -272,7 +277,7 @@
     text-indent: -1px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\0000397}}
   input, .input {
     border: 1px solid #838384;
     border-radius: 4px;
@@ -289,7 +294,7 @@
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003107}}
   input:focus, .input:focus {
     outline: none;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset ;
@@ -297,7 +302,7 @@
   }
 
   /*Icons*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003114}}
   [data-icon]:before {
     font-family: 'icomoon';
     content: attr(data-icon);
@@ -309,7 +314,7 @@
     -webkit-font-smoothing: antialiased;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003125}}
   .screen-reader-text {
     position: absolute;
     top: -9999px;
@@ -635,18 +640,22 @@
     box-sizing: border-box;
     overflow: hidden;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003148}}
+  .self-user-image-outer img, .friend-user-image-outer img {
+    min-height: 8em;
+  }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003153}}
   .self-user-image-outer {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003157}}
   .friend-user-image-outer {
     float: right;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003161}}
   .user-images-hot .add-friend {
     display: table;
     opacity: 0;
@@ -664,7 +673,7 @@
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003174}}
   .user-images-hot .add-friend:hover {
     -webkit-transition: 0.25s all ease;
     -moz-transition: 0.25s all ease;
@@ -673,7 +682,7 @@
     transition: 0.25s all ease;
     opacity: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003179}}
   .user-images-hot .add-friend h3 {
     display: table-cell;
     position: relative;
@@ -684,7 +693,7 @@
     border: 1px dashed #838384;
     border-radius: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003189}}
   .user-images-hot .add-friend h3:after {
     position: absolute;
     left: 50%;
@@ -696,50 +705,50 @@
     font-size: 1.6em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003202}}
   .create-date-button {
     display: block;
     margin-top: 5em;
     text-align: center;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003207}}
   .create-date-button .button {
     background: rgba(0, 0, 0, 0.5);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003210}}
   .create-date-button .button:hover {
     background: #d13d27;
   }
 
   /*CHOOSE MUSIC MODAL*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003217}}
   #music-search {
     text-align: center;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003216}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003220}}
   #music-search #searching {
     margin-top: 2em;
     font-family: 'LatoBold', helvetica, sans-serif;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003226}}
   #spotify-search-term, #facebook-search-box {
     width: 33.3333%;
     margin-right: 0.25em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003231}}
   #spotify-search-results {
     text-align: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003235}}
   .search-results-title {
     font-family: 'LatoBold', helvetica, sans-serif;
     margin-top: 2em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003236}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003240}}
   .track-search-headers {
     padding: 0.25em 0.5em;
     margin-top: 1em;
@@ -747,39 +756,39 @@
     border-radius: 4px 4px 0 0;
     background: #f3f3f3;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003247}}
   .track-search-headers h4 {
     display: inline-block;
     font-family: 'LatoBold', helvetica, sans-serif;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003253}}
   .search-name-header {
     width: 52.5%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003253}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003257}}
   #results-list {
     background: #f3f3f3;
     border-left: 1px solid #838384;
     border-right: 1px solid #838384;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003262}}
   #results-list li {
     padding: 0.25em 0.5em;
     border-bottom: 1px solid #838384;
     cursor: pointer;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003267}}
   #results-list li:last-child {
     border-radius: 0 0 4px 4px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003271}}
   #results-list li:nth-child(odd) {
     background: white;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003277}}
   .search-track-name, .search-artist-name {
     display: inline-block;
     width: 50%;
@@ -789,24 +798,24 @@
     overflow: hidden;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003282}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003286}}
   .search-artist-name {
     width: 40%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003290}}
   .search-track-play {
     float: right;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003294}}
   #chosen-tracks {
     display: inline-block;
     width: 100%;
     margin: 1em 0 2em;
     text-align: center;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003300}}
   #chosen-tracks li {
     display: inline-block;
     width: 15%;
@@ -820,19 +829,19 @@
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003309}}
   #chosen-tracks li img {
     display: block;
     max-width: 100%;
     border: 1px solid white;
     margin: -1px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003317}}
   #chosen-tracks li:hover .play-track, #chosen-tracks li:hover .stop-track {
     opacity: 1;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003323}}
   .chosen-play-track, .chosen-stop-track {
     opacity: 0;
     position: absolute;
@@ -855,13 +864,13 @@
   }
 
   /*CHOOSE FRIEND MODAL*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003341}}
   #facebook-search-results {
     width: 100%;
     margin: 2em 0 0 -2.5%;
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003346}}
   #facebook-search-results li {
     float: left;
     width: 47.5%;
@@ -877,15 +886,15 @@
     transition: 0.25s all ease;
     cursor: pointer;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003355}}
   #facebook-search-results li:hover {
     border-color: #838384;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003360}}
   #facebook-search-results img {
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003364}}
   #facebook-search-results span {
     line-height: 50px;
     float: left;
@@ -1016,6 +1025,78 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date\.scss}line{font-family:\0000398}}
   .date-date {
     display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\000031}}
+  #dates {
+    margin-top: 2em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\000034}}
+  #dates h2 {
+    margin-bottom: 0.6em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\000039}}
+  .date-list {
+    margin-bottom: 8em;
+    border: 1px solid #838384;
+    border-radius: 4px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\0000314}}
+  .date-list .date-item {
+    width: 100%;
+    padding: 0 1em;
+    height: 4em;
+    line-height: 3.9em;
+    border-bottom: 1px solid #838384;
+    -webkit-transition: 0.25s all ease;
+    -moz-transition: 0.25s all ease;
+    -ms-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: white;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\0000325}}
+  .date-list .date-item:hover {
+    background: #f3f3f3;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\0000329}}
+  .date-list .date-item:first-child {
+    border-radius: 4px 4px 0 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\0000333}}
+  .date-list .date-item:last-child {
+    border: none;
+    border-radius: 0 0 4px 4px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\0000339}}
+  .date-list h3 {
+    float: left;
+    margin-right: 1em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\0000344}}
+  .date-list .date-item-date, .date-list .date-item-title {
+    float: left;
+    margin-right: 1em;
+    color: #838384;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\0000350}}
+  .date-list .date-item-title {
+    font-family: 'LatoLightItalic', helvetica, sans-serif;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\0000354}}
+  .date-list .button {
+    float: right;
+    margin-top: 0.95em;
+    background: #d13d27;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_date-list\.scss}line{font-family:\0000359}}
+  .date-list .button:hover {
+    background: #da4d38;
   }
 
   /**
@@ -1294,28 +1375,28 @@
 }
 @media screen and (min-width: 21em) {
   /*336px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003133}}
   body {
     font-size: 75%;
   }
 }
 @media screen and (min-width: 37.5em) {
   /*600px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003139}}
   body {
     font-size: 87.5%;
   }
 }
 @media screen and (min-width: 60em) {
   /*960px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/base\/_global\.scss}line{font-family:\00003145}}
   body {
     font-size: 100%;
   }
 }
 @media only screen and (min-width: 62.5em) {
   /*1000px*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Nathan\/Sites\/track-with-me\/public\/css\/scss\/modules\/_create\.scss}line{font-family:\00003382}}
   #facebook-search-results li {
     width: 30.833333%;
     margin: 0 0 2.5% 2.5%;
