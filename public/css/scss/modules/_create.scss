@@ -113,9 +113,9 @@
 	@include box-sizing;
 	z-index: 1;
 
-	h3{
+	h2{
 		position: relative;
-		font-size: 1.6em;
+		font-size: 1.4em;
 
 		&:after{
 			position: absolute;
@@ -176,7 +176,7 @@
 		opacity: 1;
 	}
 
-	h3{
+	h2{
 		display: table-cell;
 		position: relative;
 		padding-top: 2.2em;
