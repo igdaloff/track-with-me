@@ -4,6 +4,9 @@
 <% script('/javascripts/spotify-search.js') -%>
 <% script('/javascripts/facebook-search.js') -%>
 <% script('/javascripts/date.js') -%>
+<% script('/javascripts/jquery.timeAutocomplete.min.js') -%>
+<% script('/javascripts/jquery-ui-1.10.3.custom.min.js') -%>
+
 
 
 <!-- TODO - No way to actually create date right now -->
@@ -108,14 +111,25 @@
 				<h2>Schedule Your Date</h2>
 				<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
 
+       <form class="date-time-form">
+       	<label>Date:</label>
+			 	<input type="text" id="date-date" />
+       	<label>Time:</label>
+       	<input type="text" id="date-time" />
+
+       </form>
+
+
 				<!-- Hidden form to submit shit once it's done -->
 				<form id='date-form' method='post' action='/create'>
+<!--
 					<input type='hidden' id='date-name' name='date[name]'>
 					<input type='hidden' id="date-friend" name='date[friend]'>
 					<input type='hidden' id='date-date' name='date[date]' >
 					<input type='hidden' id='date-song1' name='date[song1]'>
 					<input type='hidden' id='date-song2' name='date[song2]'>
 					<input type='hidden' id='date-song3' name='date[song3]'>
+-->
 
 					<div class="create-date-button">
 						<a href="" class="button">Schedule Date</a>
@@ -132,4 +146,16 @@
 
 </div>
 
+<script>
+	$(function() {
+
+		$('#date-time').timeAutocomplete();
+
+    $('#date-date').datepicker();
+    $("#date-date").datepicker('setDate', new Date());
+
+
+  });
+
+</script>
 

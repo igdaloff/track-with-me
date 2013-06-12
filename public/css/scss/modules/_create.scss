@@ -375,6 +375,13 @@
 	}
 }
 
+/*SET TIME/DATE MODAL*/
+.date-time-form{
+	input{
+		position: relative;
+		z-index: 10000;
+	}
+}
 @media only screen and (min-width : 62.5em) { /*1000px*/
 
 	#facebook-search-results{
