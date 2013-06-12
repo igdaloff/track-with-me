@@ -376,10 +376,58 @@
 }
 
 /*SET TIME/DATE MODAL*/
-.date-time-form{
+.date-form-wrapper{
+	width: 80%;
+	max-width: 300px;
+	padding: 1.5em 2em;
+	margin: 0 auto;
+	border-radius: 4px;
+	border: 1px solid $grey;
+}
+.schedule-date-form{
+
+	li{
+		margin-bottom: 1.5em;
+	}
+
+	label{
+		display: block;
+		margin-bottom: 0.2em;
+	}
+
 	input{
 		position: relative;
+		width: 100%;
 		z-index: 10000;
+	}
+
+	.set-date-row, .set-time-row{
+		position: relative;
+
+		&:after{
+			position: absolute;
+			right: 3%;
+			top: 1em;
+			font-size: 1.4em;
+			font-family: 'icomoon';
+			color: $black;
+			line-height: 1.6;
+			z-index: 10000;
+		}
+	}
+
+	.set-date-row:after{
+		content: 'd';
+	}
+
+	.set-time-row:after{
+		content: 't';
+	}
+}
+
+@media only screen and (min-width : 50em) { /*800px*/
+	.date-form-wrapper{
+		width: 33.333%;
 	}
 }
 @media only screen and (min-width : 62.5em) { /*1000px*/

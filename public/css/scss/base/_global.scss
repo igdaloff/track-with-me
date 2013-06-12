@@ -98,7 +98,8 @@ input, .input{
 	border: 1px solid $dark-grey;
 	border-radius: 4px;
 	height: 2.5em;
-	padding-left: 0.5em;
+	padding: 0 0 0 0.5em;
+	margin: 0;
 	font-family: 'LatoLight', helvetica, sans-serif;
 	font-size: 0.9em;
 	@include box-sizing;
@@ -108,6 +109,11 @@ input, .input{
 		outline: none;
 		@include box-shadow(0, 1px, 3px, rgba(0,0,0,.20) inset);
 	}
+}
+
+label, .label{
+	display: inline-block;
+	font-family: 'LatoBold', helvetica, sans-serif;
 }
 
 /*Icons*/

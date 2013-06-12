@@ -68,7 +68,7 @@ html {
 }
 
 .modal-container .modal-content {
-  max-height: 400px;
+/*   max-height: 400px; */
   padding: 2em;
   overflow-x: hidden;
   overflow-y: auto;
@@ -88,7 +88,7 @@ html {
 }
 
 .modal-container .modal-content > * {
-  max-width: 100%;
+/*   max-width: 100%; */
 }
 
 /*Close Button*/
@@ -207,14 +207,18 @@ html {
 }
 @media screen and (max-height: 46em) and (min-width: 30em) {
   .modal-container .modal-content {
+/*
     max-height: 340px;
     max-height: 50vh;
+*/
   }
 }
 @media screen and (max-height: 36em) and (min-width: 30em) {
   .modal-container .modal-content {
+/*
     max-height: 265px;
     max-height: 40vh;
+*/
   }
 }
 

@@ -111,14 +111,24 @@
 				<h2>Schedule Your Date</h2>
 				<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
 
-       <form class="date-time-form">
-       	<label>Date:</label>
-			 	<input type="text" id="date-date" />
-       	<label>Time:</label>
-       	<input type="text" id="date-time" />
-
-       </form>
-
+				<div class="date-form-wrapper">
+		     <form class="schedule-date-form">
+		     	<ul>
+		     		<li class="set-date-row">
+					 		<label>Date</label><input type="text" id="date-date" />
+		     		</li>
+						<li class="set-time-row">
+							<label>Time</label><input type="text" id="date-time" />
+						</li>
+						<li class="set-name-row">
+							<label>Title</label><input type="text" id="date-name" placeholder="The Stanky Stank Summer Mix" />
+						</li>
+		     	</ul>
+					<div class="create-date-button">
+						<a href="" class="button">Schedule Date</a>
+					</div>
+		     </form>
+				</div>
 
 				<!-- Hidden form to submit shit once it's done -->
 				<form id='date-form' method='post' action='/create'>
@@ -129,11 +139,12 @@
 					<input type='hidden' id='date-song1' name='date[song1]'>
 					<input type='hidden' id='date-song2' name='date[song2]'>
 					<input type='hidden' id='date-song3' name='date[song3]'>
--->
 
 					<div class="create-date-button">
 						<a href="" class="button">Schedule Date</a>
 					</div>
+-->
+
 				</form>
 			</div>
 		</div>
