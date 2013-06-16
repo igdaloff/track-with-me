@@ -2,7 +2,7 @@
 
 $(document).ready( function() {
 
-	$('.nav-link').click( function() {
+	$('.nav-drawer-link').click( function() {
 
 		var headerHeight = $('header').outerHeight();
 		var drawer = $(this).attr('href');
