@@ -131,6 +131,7 @@ exports.submit = function (req, res, next) {
 
 	var name = req.body.date.name;
 	var date = req.body.date.date;
+	var time = req.body.date.time;
 	var friend = req.body.date.friend;
 	var song1 = req.body.date.song1;
 	var song2 = req.body.date.song2;
@@ -138,11 +139,10 @@ exports.submit = function (req, res, next) {
 
 	console.log("friend: " + friend);
 
-	// this does not currently contain the current user's info - need to pull that from session
 	Date.create({
 		user: req.user.facebookId,
 		title: name,
-		date: date,
+		date: date + ' ' + time,
 		friend: friend,
 		song1: song1,
 		song2: song2,
