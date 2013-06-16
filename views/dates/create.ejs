@@ -47,7 +47,7 @@
 		<div class="modal-inner wrapper">
 			<div class="modal-content">
 				<h2>Select 3 Songs</h2>
-				<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
+				<p>Some explanatory copy will go here if we think that is necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
 
 				<ul id="chosen-tracks">
 					<li>
@@ -89,7 +89,7 @@
 		<div class="modal-inner wrapper">
 			<div class="modal-content">
 				<h2>Choose a Friend</h2>
-				<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
+				<p>Some explanatory copy will go here if we think that is necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
 				<input id='facebook-search-box' type='text' placeholder='Search Your Friends'>
 				<button id='facebook-search-button'>Search Friends</button>
 				<ul id='facebook-search-results'>
@@ -109,7 +109,7 @@
 		<div class="modal-inner wrapper">
 			<div class="modal-content">
 				<h2>Schedule Your Date</h2>
-				<p>Some explanatory copy will go here if we think that's necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
+				<p>Some explanatory copy will go here if we think that is necessary. It probably is because people are mostly dumb most of the time. Mostly.</p>
 
 				<div class="date-form-wrapper">
 		     <form class="schedule-date-form">
@@ -130,22 +130,7 @@
 		     </form>
 				</div>
 
-				<!-- Hidden form to submit shit once it's done -->
-				<form id='date-form' method='post' action='/create'>
-<!--
-					<input type='hidden' id='date-name' name='date[name]'>
-					<input type='hidden' id="date-friend" name='date[friend]'>
-					<input type='hidden' id='date-date' name='date[date]' >
-					<input type='hidden' id='date-song1' name='date[song1]'>
-					<input type='hidden' id='date-song2' name='date[song2]'>
-					<input type='hidden' id='date-song3' name='date[song3]'>
-
-					<div class="create-date-button">
-						<a href="" class="button">Schedule Date</a>
-					</div>
--->
-
-				</form>
+				
 			</div>
 		</div>
 		<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">×</a>
@@ -154,6 +139,19 @@
 	<div class="schedule-date-button">
 		<a href="#schedule-date" class="button">Schedule Date</a>
 	</div>
+	
+	<!-- Hidden form to submit shit once it is done -->
+	<form id='date-form' method='post' action='/create'>
+
+		<input type='hidden' id='date-name' name='date[name]'>
+		<input type='hidden' id="date-friend" name='date[friend]'>
+		<input type='hidden' id='date-date' name='date[date]' >
+		<input type='hidden' id='date-time' name='date[time]' >
+		<input type='hidden' id='date-song1' name='date[song1]'>
+		<input type='hidden' id='date-song2' name='date[song2]'>
+		<input type='hidden' id='date-song3' name='date[song3]'>
+
+	</form>
 
 </div>
 
@@ -162,11 +160,11 @@
 
 		$('#date-time').timeAutocomplete();
 
-    $('#date-date').datepicker();
-    $("#date-date").datepicker('setDate', new Date());
+		$('#date-date').datepicker();
+		$("#date-date").datepicker('setDate', new Date());
 
 
-  });
+	});
 
 </script>
 

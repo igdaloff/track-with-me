@@ -24,13 +24,27 @@ $(document).ready( function() {
 		$('img.facebook-image').trigger("unveil");
 	})
 
+	/* When the schedule date button is pressed, populate the form with the tracks
+	   and friend.  Then we wait for the second create button to be clicked to set
+	   date, time, and name, then submit the form 
+	*/
+	
 	$('div.create-date-button').click(function(e){
 
 		e.preventDefault();
 		console.log("clicked create-date-button");
 		// TODO - validate that everything is good
 		var errorMessage = ''
-
+		
+		// set date, time, and title
+		var date = $('li.set-date-row input').val();
+		var time = $('li.set-time-row input').val();
+		var name = $('li.set-name-row input').val();
+		
+		console.log("date: " + date + ", time: " + time + ", name: " + name);
+		$('#date-form input#date-date').val(date);
+		$('#date-form input#date-time').val(time);
+		$('#date-form input#date-name').val(name);
 
 		$('#date-form').submit();
 	});
