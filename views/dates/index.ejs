@@ -6,16 +6,12 @@
 	<ul class="date-list">
 		<% dates.forEach(function(date) { %>
 		<li class="date-item">
-			<a href="/date?id=<%= date._id %>">
-				<h3 class="date-item-friend">Jon Solove</h3>
-				<span class="date-item-date">Dec. 20, 2013, 5:00 pm</span>
-				<span class="date-item-title">Stanky Ass Stank Mix</span>
-
-		<!-- Uncomment and delete above when this dynamic data is acting right
+			<a href="/date?id=<%= date.id %>">
+				<h3 class="date-item-friend"><%= date.user %></h3>
 				<h3 class="date-item-friend"><%= date.friend %></h3>
 				<span class="date-item-date"><%= date.date %></span>
-				<span class="date-item-title">"<%= date.title %>"</span>
-		-->
+				<span class="date-item-title"><%= date.name %></span>
+
 				<span class="button">View</span>
 			</a>
 		</li>

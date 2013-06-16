@@ -16,13 +16,56 @@ exports.list = function(req, res){
 		
 	}, function(err, dates){
 		if (err) return next(err);
+		
+		var datesData = [];
+		
+		// iterate over dates
+		for(var i in dates) {
 
-		res.render('dates', {
-			title: 'My Dates',
-			dates: dates,
-			isAuthenticated: req.isAuthenticated()
-		});
-	})
+			var date = dates[i];
+		
+			/* 
+				We need to turn the 'friend' and 'user' id into a human readable name. 
+				
+				This is using wrapping because it has to.  Look up wrapping if you want
+				to learn more...it's annoying as shit.
+				
+			*/
+			(function(date){
+				
+				facebook.getFbData(req.user.accessToken, '/' + date.user, function(user){
+			
+					var userJson = JSON.parse(user);
+				
+					facebook.getFbData(req.user.accessToken, '/' + date.friend, function(friend){
+					
+						var friendJson = JSON.parse(friend);
+	
+						datesData.push({
+							"user" : userJson.name,
+							"friend" : friendJson.name,
+							"date" : date.date,
+							"name" : date.title,
+							"id" : date._id
+						});
+						
+						if (datesData.length == dates.length) {
+							renderDates(res, req, datesData)
+						}	
+					});
+				});	
+				
+			})(date);
+		}		
+	});
+}
+
+function renderDates(res, req, datesData) {
+	res.render('dates', {
+		title: 'My Dates',
+		dates: datesData,
+		isAuthenticated: req.isAuthenticated()
+	});
 }
 
 exports.form = function(req, res){
@@ -57,27 +100,11 @@ exports.form = function(req, res){
 		});
 
 	} else {
-		// example JSON response:
-		/* 
-			"data": [
-			    {
-			      "id": "114077", 
-			      "name": "Sam Packard", 
-			      "username": "samelypackard", 
-			      "picture": {
-			        "data": {
-			          "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/202956_114077_7949156_q.jpg", 
-			          "is_silhouette": false
-			        }
-			      }
-			    }, ...
-			]
-			*/
+		
 		// preload the facebook friends (via /me/friends)
 		facebook.getFbData(req.user.accessToken, '/me/friends?fields=id,name,username,picture', function(data){
 			
 			var friendsJson = JSON.parse(data);
-
 
 			var friendsArray = friendsJson.data
 
